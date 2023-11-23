@@ -24,7 +24,7 @@ const Home = () => {
 
   return (
     <div>
-      <h1>Home</h1>
+      <h1 className="text-2xl my-2">Home</h1>
       <Carousel /* https://www.npmjs.com/package/react-responsive-carousel */
         dynamicHeight={false}
         width={"50%"}
