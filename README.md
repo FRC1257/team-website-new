@@ -1,6 +1,6 @@
 # Getting Started with the New 1257 Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). This project also uses vite.
 
 ## Available Scripts
 
