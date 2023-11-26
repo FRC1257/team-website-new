@@ -14,7 +14,7 @@ import HomepageTest from "./components/testing/HomepageTest";
 
 function App() {
   return (
-    <div className="px-5 py-5">
+    // <div className="px-5 py-5">
       <BrowserRouter>
         {/* <Header /> */}
         <Routes>
@@ -30,7 +30,7 @@ function App() {
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>
-    </div>
+    // </div>
   );
 }
 
