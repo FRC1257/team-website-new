@@ -14,7 +14,7 @@ const LinkButton = (props: { link: string, text: string, iconComponent?: JSX.Ele
         <div className="max-w-screen-sm mx-auto mb-4 ">
             <a
                 href={props.link}
-                className="flex items-center text-white bg-green-500 text-base font-medium hover:bg-green-600 py-2 px-4 rounded-md transition-transform transform hover:scale-105 sm:w-full md:w-full lg:w-full xl:w-full"
+                className="flex items-center text-white bg-green-400 text-base font-medium hover:bg-green-600 py-4 px-4 rounded-md transition-transform transform hover:scale-105 sm:w-full md:w-full lg:w-full xl:w-full"
             >
                 {props.iconComponent && (
                     <div className="mr-2 flex items-center">
@@ -22,7 +22,7 @@ const LinkButton = (props: { link: string, text: string, iconComponent?: JSX.Ele
                     </div>
                 )}
                 <div className="flex-grow">
-                    <p className='text-center'>{props.text}</p>
+                    <p className='text-center text-lg'>{props.text}</p>
                 </div>
             </a>
         </div>
@@ -52,13 +52,13 @@ const LinkTree = () => {
             {/* Add more LinkButtons with different icons as needed */}
             {/* Add other socials in a row */}
             <div className="flex justify-center">
-                <a href="https://www.instagram.com/team1257/" className="text-green-500 hover:text-green-800 mr-1">
+                <a href="https://www.instagram.com/team1257/" className="text-green-400 hover:text-green-800 mr-1">
                     <Instagram size={35} />
                 </a>
-                <a href="mailto:robotics@ucvts.org" className="text-green-500 hover:text-green-800 mr-1">
+                <a href="mailto:robotics@ucvts.org" className="text-green-400 hover:text-green-800 mr-1">
                     <EmailOutline size={35} />
                 </a>
-                <a href="https://www.github.com/FRC1257" className="text-green-500 hover:text-green-800">
+                <a href="https://www.github.com/FRC1257" className="text-green-400 hover:text-green-800">
                     <Github size={35} />
                 </a>
             </div>
