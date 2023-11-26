@@ -14,7 +14,7 @@ const LinkButton = (props: { link: string, text: string, iconComponent?: JSX.Ele
         <div className="max-w-screen-sm mx-auto mb-4 ">
             <a
                 href={props.link}
-                className="flex items-center text-white bg-green-400 text-base font-medium hover:bg-green-600 py-4 px-4 rounded-md transition-transform transform hover:scale-105 sm:w-full md:w-full lg:w-full xl:w-full"
+                className="flex items-center text-white bg-[#1cd64e] text-base font-medium py-4 px-4 rounded-md transition-transform transform hover:scale-105 sm:w-full md:w-full lg:w-full xl:w-full"
             >
                 {props.iconComponent && (
                     <div className="mr-2 flex items-center">
@@ -43,12 +43,12 @@ const LinkTree = () => {
                 <h2 className='text-lg'>Resources for Parallel Universe: The UCVTS Robotics Team</h2>
             </div>
 
-            <LinkButton link="https://magnetpsa.membershiptoolkit.com/ucvtsroboticsteam1257" text="Online Monetary Donation" iconComponent={<DollarSign size={20} />} />
-            <LinkButton link="https://docs.google.com/document/d/17Fh9EfhPsfM_AIyTdZCUcq2oRNhVmU23-foT9kK2UjE/edit?usp=sharing" text="Donation Requests Letter" iconComponent={< RequestPage size={20} />} />
-            <LinkButton link="https://docs.google.com/document/d/1KXl6Iq9SIzSLqnjDFEElFau6DdP6LLuYM7UHdGFDLuM/edit?usp=sharing" text="Corporate Sponsor Letter Request" iconComponent={<BriefcaseFill size={20} />} />
-            <LinkButton link="https://sites.google.com/ucvts.org/team-1257-robotics/home" text="Parent/Guardian Resources" iconComponent={<Link size={20} />} />
-            <LinkButton link="https://forms.gle/rccdjtiegZnMdVER7" text="Feedback Form" iconComponent={<Feedback size={20} />} />
-            <LinkButton link='https://forms.gle/Bh4YFhyS7CT22MwY9' text='Join our Mailing List' iconComponent={<Mail size={20} />} />
+            <LinkButton link="https://magnetpsa.membershiptoolkit.com/ucvtsroboticsteam1257" text="Online Monetary Donation" iconComponent={<DollarSign size={35} />} />
+            <LinkButton link="https://docs.google.com/document/d/17Fh9EfhPsfM_AIyTdZCUcq2oRNhVmU23-foT9kK2UjE/edit?usp=sharing" text="Donation Requests Letter" iconComponent={< RequestPage size={35} />} />
+            <LinkButton link="https://docs.google.com/document/d/1KXl6Iq9SIzSLqnjDFEElFau6DdP6LLuYM7UHdGFDLuM/edit?usp=sharing" text="Corporate Sponsor Letter Request" iconComponent={<BriefcaseFill size={35} />} />
+            <LinkButton link="https://sites.google.com/ucvts.org/team-1257-robotics/home" text="Parent/Guardian Resources" iconComponent={<Link size={35} />} />
+            <LinkButton link="https://forms.gle/rccdjtiegZnMdVER7" text="Feedback Form" iconComponent={<Feedback size={35} />} />
+            <LinkButton link='https://forms.gle/Bh4YFhyS7CT22MwY9' text='Join our Mailing List' iconComponent={<Mail size={35} />} />
             {/* Add more LinkButtons with different icons as needed */}
             {/* Add other socials in a row */}
             <div className="flex justify-center">
