@@ -52,7 +52,7 @@ const LinkTree = () => {
             {/* Add more LinkButtons with different icons as needed */}
             {/* Add other socials in a row */}
             <div className="flex justify-center">
-                <a href="https://www.instagram.com/team1257/" className="text-green-400 hover:text-green-800 mr-1">
+                <a href="https://www.instagram.com/frc1257/" className="text-green-400 hover:text-green-800 mr-1">
                     <Instagram size={35} />
                 </a>
                 <a href="mailto:robotics@ucvts.org" className="text-green-400 hover:text-green-800 mr-1">
