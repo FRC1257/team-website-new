@@ -1,4 +1,23 @@
 // TODO: ask Nat/Maia to create square SVGs/PNGs of the logo (right now it's off-center)
+import Dropdown, { SubtitleItemArray } from "./Dropdown";
+
+const aboutItems: SubtitleItemArray = [
+  { title: "Team Info", to: "info", key: "info" },
+  { title: "History", to: "history", key: "history" },
+  { title: "Awards", to: "awards", key: "awards" },
+  { title: "Leadership", to: "leadership", key: "leadership" },
+];
+
+const parentsItems: SubtitleItemArray = [
+  { title: "Forms", to: "forms", key: "forms" },
+  { title: "Wishlist", to: "wishlist", key: "wishlist" },
+  { title: "Newsletter", to: "newsletter", key: "newsletter" },
+];
+
+const resourcesItems: SubtitleItemArray = [
+  { title: "Documentation", to: "docs", key: "docs" },
+  { title: "Handbook", to: "book", key: "book" },
+];
 
 const HeaderPls = () => {
   return (
@@ -17,30 +36,20 @@ const HeaderPls = () => {
       </div>
       <div className="flex justify-center">
         <ul className="flex justify-between items-center gap-4 text-white text-lg font-bold">
-          <li className="flex flex-wrap items-center gap-2 p-4 hover:bg-blue-900">
-            <span>About</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6 hover:bg-green-800"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="m19.5 8.25-7.5 7.5-7.5-7.5"
-              />
-            </svg>
-          </li>
-          <li className="p-4 hover:bg-blue-900">Outreach</li>
-          <li className="p-4 hover:bg-blue-900">Parents</li>
-          <li className="p-4 hover:bg-blue-900">Resources</li>
-          <li className="p-4 hover:bg-blue-900">Contact</li>
-          <li className="p-4 hover:bg-blue-900">Sponsors</li>
           <li className="p-4">
-            <button className="bg-purple-800 rounded-xl py-2 px-4">
+            <Dropdown title="About" subtitles={aboutItems} />
+          </li>
+          <li className="p-4">Outreach</li>
+          <li className="p-4">
+            <Dropdown title="Parents" subtitles={parentsItems} />
+          </li>
+          <li className="p-4">
+            <Dropdown title="Resources" subtitles={resourcesItems} />
+          </li>
+          <li className="p-4">Contact</li>
+          <li className="p-4">Sponsors</li>
+          <li className="p-4">
+            <button className="bg-purple-800 hover:bg-purple-700 rounded-xl py-2 px-4">
               Support Us
             </button>
           </li>
