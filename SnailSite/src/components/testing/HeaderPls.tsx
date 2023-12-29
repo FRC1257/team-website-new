@@ -1,7 +1,21 @@
+// TODO: ask Nat/Maia to create square SVGs/PNGs of the logo (right now it's off-center)
+
 const HeaderPls = () => {
   return (
-    <nav>
-      <div className="flex justify-center bg-gray-700">
+    <nav className="bg-[url('img/backgrounds/galaxy-background.png')] bg-cover bg-center flex flex-col">
+      <div className="flex justify-center mt-4">
+        <div className="bg-black rounded-full">
+          <img
+            className="w-32 h-32"
+            src="img/logos/snail_white.png"
+            alt="Team Logo"
+          />
+        </div>
+      </div>
+      <div className="text-center text-white text-5xl font-bold tracking-wide mt-2">
+        Parallel Universe
+      </div>
+      <div className="flex justify-center">
         <ul className="flex justify-between items-center gap-4 text-white text-lg font-bold">
           <li className="flex flex-wrap items-center gap-2 p-4 hover:bg-blue-900">
             <span>About</span>
