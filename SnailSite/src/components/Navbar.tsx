@@ -19,7 +19,7 @@ const resourcesItems: SubtitleItemArray = [
   { title: "Handbook", to: "book", key: "book" },
 ];
 
-const HeaderPls = () => {
+const Navbar = () => {
   return (
     <nav className="bg-[url('img/backgrounds/galaxy-background.png')] bg-cover bg-center flex flex-col">
       <div className="flex justify-center mt-4">
@@ -59,4 +59,4 @@ const HeaderPls = () => {
   );
 };
 
-export default HeaderPls;
+export default Navbar;
