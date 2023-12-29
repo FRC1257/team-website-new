@@ -35,6 +35,8 @@ jobs:
         with:
           node-version: 18
           cache: 'npm'
+      - name: Go into directory
+        run: cd SnailSite
       - name: Install dependencies
         run: npm install
       - name: Build
