@@ -24,12 +24,12 @@ const resourcesItems: SubtitleItemArray = [
 
 const Navbar = () => {
   return (
-    <nav className="bg-[url('img/backgrounds/galaxy-background.png')] bg-cover bg-center flex flex-col">
+    <nav className="bg-[url('pics/backgrounds/galaxy-background.png')] bg-cover bg-center flex flex-col">
       <div className="flex justify-center mt-4">
         <div className="bg-black rounded-full">
           <img
             className="w-32 h-32"
-            src="img/logos/snail_white.png"
+            src="pics/logos/snail_white.png"
             alt="Team Logo"
           />
         </div>

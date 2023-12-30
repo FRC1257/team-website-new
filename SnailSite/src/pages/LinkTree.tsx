@@ -33,7 +33,7 @@ const LinkTree = () => {
     return (
         <div className='py-3 px-2'>
             <div className="flex justify-center">
-                <img className="w-32 relative" src={"/img/logos/snail_black.png"} />
+                <img className="w-32 relative" src={"/pics/logos/snail_black.png"} />
             </div>
             <div className="flex justify-center">
                 {/* Make text like a header */}
