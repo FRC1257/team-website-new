@@ -1,4 +1,6 @@
 // TODO: ask Nat/Maia to create square SVGs/PNGs of the logo (right now it's off-center)
+// TODO: bg-image doesn't show on deploy! see https://stackoverflow.com/q/72754547 for fix
+
 import Dropdown, { SubtitleItemArray } from "./Dropdown";
 import { Link } from "react-router-dom";
 

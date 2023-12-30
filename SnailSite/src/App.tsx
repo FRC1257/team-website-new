@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import "./App.css";
 
 import LinkTree from "./pages/LinkTree";
+import AltHome2 from "./pages/AltHome2";
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/linktree" element={<LinkTree />} />
         <Route path="*" element={<NotFound />} />
+
+        <Route path="/info" element={<AltHome2 />} />
       </Routes>
       <Footer />
     </BrowserRouter>
