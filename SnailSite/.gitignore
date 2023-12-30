@@ -24,7 +24,3 @@ dist-ssr
 *.sw?
 
 extratests
-
-
-# Contentlayer
-.contentlayer

@@ -9,12 +9,8 @@ import Leadership from "./pages/Leadership";
 import Donate from "./pages/Donate";
 import Contact from "./pages/Contact";
 import "./App.css";
-import HeaderTest from "./components/testing/HeaderTest";
-import HeaderPls from "./components/testing/HeaderPls";
 
-// import HomepageTest from "./components/testing/HomepageTest";
-// import NavbarFlowbite from "./components/NavbarFlowbite";
-// import AnotherNavbar from "./components/AnotherNavbar";
+import HomepageTest from "./components/testing/HomepageTest";
 
 import HomepageTest from "./components/testing/HomepageTest";
 import LinkTree from "./pages/LinkTree";
@@ -33,8 +29,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
 
-          <Route path="/test" element={<HeaderTest />} />
-          <Route path="/test2" element={<HeaderPls />} />
+          <Route path="/test" element={<HomepageTest />} />
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>
