@@ -1,7 +1,8 @@
-import React from "react";
 import useEmblaCarousel, { EmblaOptionsType } from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import imageByIndex from "./imageByIndex";
+
+import { Link } from "react-router-dom";
 
 type PropType = {
   slides: number[];
@@ -23,7 +24,11 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         <h2 className="text-4xl font-semibold">
           We are the coolest FRC Robotics Team in New Jersey.
         </h2>
-        <button className="bg-green-800 hover:bg-green-700 rounded-xl py-4 px-6 font-bold text-lg mt-4">Learn more</button>
+        <Link to="/info">
+          <button className="bg-green-800 hover:bg-green-700 rounded-xl py-4 px-6 font-bold text-lg mt-4">
+            Learn more
+          </button>
+        </Link>
       </div>
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
