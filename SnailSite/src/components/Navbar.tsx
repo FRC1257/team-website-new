@@ -4,6 +4,8 @@
 import Dropdown, { SubtitleItemArray } from "./Dropdown";
 import { Link } from "react-router-dom";
 
+import galaxy from "./images/backgrounds/galaxy-background.png"
+
 const aboutItems: SubtitleItemArray = [
   { title: "Team Info", to: "info", key: "info" },
   { title: "History", to: "history", key: "history" },
@@ -24,7 +26,7 @@ const resourcesItems: SubtitleItemArray = [
 
 const Navbar = () => {
   return (
-    <nav className="bg-[url('pics/backgrounds/galaxy-background.png')] bg-cover bg-center flex flex-col">
+    <nav className="bg-cover bg-center flex flex-col" style={{backgroundImage: `url(${galaxy})`}}>
       <div className="flex justify-center mt-4">
         <div className="bg-black rounded-full">
           <img
