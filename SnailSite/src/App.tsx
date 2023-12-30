@@ -9,13 +9,19 @@ import Leadership from "./pages/Leadership";
 import Donate from "./pages/Donate";
 import Contact from "./pages/Contact";
 import "./App.css";
+import HeaderTest from "./components/testing/HeaderTest";
+import HeaderPls from "./components/testing/HeaderPls";
+
+// import HomepageTest from "./components/testing/HomepageTest";
+// import NavbarFlowbite from "./components/NavbarFlowbite";
+// import AnotherNavbar from "./components/AnotherNavbar";
 
 import HomepageTest from "./components/testing/HomepageTest";
 import LinkTree from "./pages/LinkTree";
 
 function App() {
   return (
-    <div className="">
+    // <div className="px-5 py-5">
       <BrowserRouter>
         {/* <Header /> */}
         <Routes>
@@ -25,14 +31,14 @@ function App() {
           <Route path="/Leadership" element={<Leadership />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path='/linktree' element={<LinkTree />} />
           <Route path="*" element={<NotFound />} />
 
-          <Route path="/test" element={<HomepageTest />} />
+          <Route path="/test" element={<HeaderTest />} />
+          <Route path="/test2" element={<HeaderPls />} />
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>
-    </div>
+    // </div>
   );
 }
 
