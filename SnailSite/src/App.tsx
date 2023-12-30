@@ -10,13 +10,12 @@ import Donate from "./pages/Donate";
 import Contact from "./pages/Contact";
 import "./App.css";
 
-
 import HomepageTest from "./components/testing/HomepageTest";
 import LinkTree from "./pages/LinkTree";
 
 function App() {
   return (
-    <div className="px-5 py-5">
+    <div className="">
       <BrowserRouter>
         {/* <Header /> */}
         <Routes>
@@ -26,7 +25,7 @@ function App() {
           <Route path="/Leadership" element={<Leadership />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/linktree" element={<LinkTree />} />
+          <Route path='/linktree' element={<LinkTree />} />
           <Route path="*" element={<NotFound />} />
 
           <Route path="/test" element={<HomepageTest />} />
