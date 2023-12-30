@@ -17,7 +17,7 @@ import LinkTree from "./pages/LinkTree";
 
 function App() {
   return (
-    // <div className="px-5 py-5">
+    <div className="px-5 py-5">
       <BrowserRouter>
         {/* <Header /> */}
         <Routes>
@@ -33,7 +33,7 @@ function App() {
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>
-    // </div>
+    </div>
   );
 }
 

@@ -1,18 +1,11 @@
 import HeaderTest from "./HeaderTest";
 import TitleAreaTest from "./TitleAreaTest";
-import Cards from "./extratests/Cards";
-import Features from "./extratests/Features";
-// import HeroTest from "./extratests/HeroTest";
-import Quotes from "./extratests/Quotes";
 
 const HomepageTest = () => {
   return (
-    <div className=" bg-stone-300">
+    <div className="inline-flex h-[3000px] w-screen flex-col items-start justify-start bg-stone-300 pb-[1578px]">
       <HeaderTest />
       <TitleAreaTest />
-      {/* <Features /> */}
-      {/* <Cards /> */}
-      {/* <Quotes /> */}
     </div>
   );
 };
