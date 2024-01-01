@@ -1,31 +1,25 @@
-// components/Section.tsx
-
-import classNames from 'classnames';
+import Button, { ButtonProps } from "./Button";
 
 interface SectionProps {
-  position: 'left' | 'right';
-  children: React.ReactNode;
-  margin?: string;
-  color?: string;
+  heading: string;
+  body: string;
+  button: ButtonProps;
+  imgSrc: string;
 }
 
-
-const Section = (props: SectionProps) => {
-  const sectionClasses = classNames(
-    'flex',
-    'items-center',
-    'justify-between',
-    props.position === 'left' ? 'flex-row' : 'flex-row-reverse',
-    `m-${props.margin}`,
-    props.color
-  );
-
+const Section = ({ heading, body, imgSrc, button }: SectionProps) => {
   return (
-    <div className={sectionClasses}>
-      <div className="flex-1">{props.position === 'left' && props.children}</div>
-      <div className="flex-1">{props.position === 'right' && props.children}</div>
+    <div className="grid grid-cols-2 gap-20 bg-green-300 p-24">
+      <div className="bg-red-300">
+        <img className="h-[50dvh] w-full" src={imgSrc} alt="myimg" />
+      </div>
+      <div className="bg-blue-300">
+        <div className="text-6xl mb-10">{heading}</div>
+        <div className="text-2xl flex flex-wrap leading-relaxed">{body}</div>
+        <Button text={button.text} style={button.style} to={button.to} />
+      </div>
     </div>
   );
-}
+};
 
 export default Section;
