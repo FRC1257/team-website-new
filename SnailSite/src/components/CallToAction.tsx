@@ -1,17 +1,16 @@
-import Button, { ButtonProps } from "./Button";
-
-export interface CTAProps {
-  textLeft?: boolean;
-  heading: string;
-  body: string;
-  button: ButtonProps;
-  imgSrc: string;
-}
+import Button from "./Button";
+import { SectionProps } from "./Section";
 
 // jank way to add padding to grid
 // https://stackoverflow.com/a/10048839
 // https://www.w3schools.com/css/css_border_color.asp
-const CTA = ({ textLeft, heading, body, imgSrc, button }: CTAProps) => {
+const CallToAction = ({
+  textLeft,
+  heading,
+  body,
+  imgSrc,
+  button,
+}: SectionProps) => {
   return (
     <div className="bg-purple-200 px-24 py-12">
       <div className="grid grid-cols-2 gap-20 bg-green-300 border-[50px] border-green-300">
@@ -30,4 +29,4 @@ const CTA = ({ textLeft, heading, body, imgSrc, button }: CTAProps) => {
   );
 };
 
-export default CTA;
+export default CallToAction;

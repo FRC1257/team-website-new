@@ -1,4 +1,4 @@
-import CTA from "../components/CTA";
+import CallToAction from "../components/CallToAction";
 import EmblaCarousel from "../components/EmblaCarousel";
 import Section, { SectionProps } from "../components/Section";
 import { carouselLen } from "../components/imageByIndex";
@@ -51,7 +51,7 @@ const Home = () => {
       <div className="py-12 bg-red-100">
         <Section {...sectionOne} />
         <Section {...sectionTwo} />
-        <CTA {...cta} />
+        <CallToAction {...cta} />
       </div>
     </div>
   );
