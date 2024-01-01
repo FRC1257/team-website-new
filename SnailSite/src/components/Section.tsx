@@ -1,16 +1,17 @@
 import Button, { ButtonProps } from "./Button";
 
 interface SectionProps {
+  textLeft?: boolean;
   heading: string;
   body: string;
   button: ButtonProps;
   imgSrc: string;
 }
 
-const Section = ({ heading, body, imgSrc, button }: SectionProps) => {
+const Section = ({ textLeft, heading, body, imgSrc, button }: SectionProps) => {
   return (
     <div className="grid grid-cols-2 gap-20 bg-green-300 p-24">
-      <div className="bg-red-300">
+      <div className={`bg-red-300 ${textLeft ? "order-1" : ""}`}>
         <img className="h-[50dvh] w-full" src={imgSrc} alt="myimg" />
       </div>
       <div className="bg-blue-300">
