@@ -1,3 +1,4 @@
+import CTA from "../components/CTA";
 import EmblaCarousel from "../components/EmblaCarousel";
 import Section, { SectionProps } from "../components/Section";
 import { carouselLen } from "../components/imageByIndex";
@@ -13,7 +14,7 @@ const sectionOne: SectionProps = {
   imgSrc: "pics/slide-1.jpg",
   button: {
     text: "Learn more",
-    style: "bg-red-800 hover:bg-red-700 text-white mt-10",
+    style: "bg-red-800 hover:bg-red-700 text-white",
     to: "/info",
   },
 };
@@ -26,7 +27,19 @@ const sectionTwo: SectionProps = {
   imgSrc: "pics/slide-2.jpg",
   button: {
     text: "Learn more",
-    style: "bg-red-800 hover:bg-red-700 text-white mt-10",
+    style: "bg-red-800 hover:bg-red-700 text-white",
+    to: "/info",
+  },
+};
+
+const ctaBody: string = `We are very very cool so that's why you should give us money pls.`;
+const cta: SectionProps = {
+  heading: "Call to Action",
+  body: ctaBody,
+  imgSrc: "pics/slide-1.jpg",
+  button: {
+    text: "Learn more",
+    style: "bg-red-800 hover:bg-red-700 text-white",
     to: "/info",
   },
 };
@@ -38,6 +51,7 @@ const Home = () => {
       <div className="py-12 bg-red-100">
         <Section {...sectionOne} />
         <Section {...sectionTwo} />
+        <CTA {...cta} />
       </div>
     </div>
   );

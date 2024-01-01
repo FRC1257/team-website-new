@@ -16,7 +16,7 @@ const Section = ({ textLeft, heading, body, imgSrc, button }: SectionProps) => {
       </div>
       <div className="bg-blue-300">
         <div className="text-6xl mb-10">{heading}</div>
-        <div className="text-2xl flex flex-wrap leading-relaxed">{body}</div>
+        <div className="text-2xl flex flex-wrap leading-relaxed mb-10">{body}</div>
         <Button text={button.text} style={button.style} to={button.to} />
       </div>
     </div>
