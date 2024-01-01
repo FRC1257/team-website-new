@@ -1,4 +1,4 @@
-import CallToAction from "../components/CallToAction";
+import CallToAction, { CallToActionProps } from "../components/CallToAction";
 import EmblaCarousel from "../components/EmblaCarousel";
 import Section, { SectionProps } from "../components/Section";
 import { carouselLen } from "../components/imageByIndex";
@@ -33,7 +33,7 @@ const sectionTwo: SectionProps = {
 };
 
 const ctaBody: string = `We are very very cool so that's why you should give us money pls.`;
-const cta: SectionProps = {
+const cta: CallToActionProps = {
   heading: "Call to Action",
   body: ctaBody,
   imgSrc: "pics/slide-1.jpg",
@@ -42,8 +42,10 @@ const cta: SectionProps = {
     style: "bg-red-800 hover:bg-red-700 text-white",
     to: "/info",
   },
+  carouselProps: { slides: SLIDES },
 };
 
+// TODO: mobile friendly
 const Home = () => {
   return (
     <div>

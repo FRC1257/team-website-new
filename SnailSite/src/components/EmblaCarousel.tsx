@@ -4,18 +4,20 @@ import imageByIndex from "./imageByIndex";
 
 import { Link } from "react-router-dom";
 
-type PropType = {
+export interface CarouselProps {
   slides: number[];
   options?: EmblaOptionsType;
-};
+}
 
 // goofy carousel
 // https://www.embla-carousel.com/examples/predefined/#autoplay
 // https://www.embla-carousel.com/api/plugins/#constructor-options
 // https://www.embla-carousel.com/plugins/autoplay/
-const EmblaCarousel: React.FC<PropType> = (props) => {
-  const { slides, options } = props;
-  const [emblaRef] = useEmblaCarousel(options, [Autoplay({ delay: 2000 })]);
+const EmblaCarousel: React.FC<CarouselProps> = ({
+  slides,
+  options,
+}: CarouselProps) => {
+  const [emblaRef] = useEmblaCarousel(options, [Autoplay({ delay: 3000 })]);
 
   return (
     <div className="relative embla">
