@@ -1,9 +1,11 @@
 import EmblaCarousel from "../components/EmblaCarousel";
 import Section from "../components/Section";
+import { carouselLen } from "../components/imageByIndex";
 import "../embla.css";
 
-const SLIDE_COUNT = 8;
+const SLIDE_COUNT = carouselLen + 1;
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+
 const Home = () => {
   return (
     <div>

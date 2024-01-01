@@ -1,8 +1,3 @@
-// import image1 from "./images/slide-1.jpg";
-// import image2 from "./images/slide-2.jpg";
-// import image3 from "./images/slide-3.jpg";
-// import image4 from "./images/slide-4.jpg";
-
 import image1 from "./images/robots/2020_robot.jpg";
 import image2 from "./images/robots/2019_shooting_shark.jpg";
 import image3 from "./images/robots/2018_bad_horse.jpg";
@@ -20,6 +15,7 @@ export const images: string[] = [
   image6,
   image7,
 ];
+export const carouselLen: number = images.length;
 
 const imageByIndex = (index: number): string => images[index % images.length];
 
