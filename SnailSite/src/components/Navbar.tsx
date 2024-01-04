@@ -1,10 +1,7 @@
-// TODO: ask Nat/Maia to create square SVGs/PNGs of the logo (right now it's off-center)
-// TODO: bg-image doesn't show on deploy! see https://stackoverflow.com/q/72754547 for fix
-
 import Dropdown, { SubtitleItemArray } from "./Dropdown";
 import { Link } from "react-router-dom";
 
-import galaxy from "./images/backgrounds/galaxy-background.png"
+import galaxy from "./images/backgrounds/a3.png";
 
 const aboutItems: SubtitleItemArray = [
   { title: "Team Info", to: "info", key: "info" },
@@ -26,12 +23,15 @@ const resourcesItems: SubtitleItemArray = [
 
 const Navbar = () => {
   return (
-    <nav className="bg-cover bg-center flex flex-col" style={{backgroundImage: `url(${galaxy})`}}>
+    <nav
+      className="bg-cover bg-center flex flex-col"
+      style={{ backgroundImage: `url(${galaxy})` }}
+    >
       <div className="flex justify-center mt-4">
         <div className="bg-black rounded-full">
           <img
             className="w-32 h-32"
-            src="pics/logos/snail_white.png"
+            src="pics/logos/biggerWhite.png"
             alt="Team Logo"
           />
         </div>
