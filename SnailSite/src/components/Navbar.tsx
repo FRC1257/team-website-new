@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 import galaxy from "./images/backgrounds/a3.png";
 
+import { Menu } from "@emotion-icons/evaicons-solid/Menu";
+
 const aboutItems: SubtitleItemArray = [
   { title: "Team Info", to: "info", key: "info" },
   { title: "History", to: "history", key: "history" },
@@ -24,25 +26,28 @@ const resourcesItems: SubtitleItemArray = [
 const Navbar = () => {
   return (
     <nav
-      className="bg-cover bg-center flex flex-col"
+      className="bg-cover bg-center flex lg:flex-col flex-row items-center p-4"
       style={{ backgroundImage: `url(${galaxy})` }}
     >
-      <div className="flex justify-center mt-4">
+      <div className="flex lg:justify-center lg:mt-4">
         <div className="bg-black rounded-full">
           <img
-            className="w-32 h-32"
+            className="lg:w-32 lg:h-32 w-16 h-16"
             src="pics/logos/biggerWhite.png"
             alt="Team Logo"
           />
         </div>
       </div>
       <Link
-        className="text-center text-white text-5xl font-bold tracking-wide mt-2"
+        className="lg:text-center text-left text-white lg:text-5xl text-3xl font-bold tracking-wide lg:mt-2 m-2"
         to=""
       >
         Parallel Universe
       </Link>
-      <div className="flex justify-center">
+      <div className="lg:hidden ml-auto">
+        <Menu size={32} color="white" />
+      </div>
+      <div className="lg:flex hidden justify-center">
         <ul className="flex justify-between items-center gap-4 text-white text-lg font-bold">
           <li className="p-4">
             <Dropdown title="About" subtitles={aboutItems} />
