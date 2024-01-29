@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import "./App.css";
 
 import LinkTree from "./pages/LinkTree";
+import DropdownMobile from "./components/DropdownMobile";
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/linktree" element={<LinkTree />} />
         <Route path="*" element={<NotFound />} />
+
+        {/* <Route path="/test" element={<DropdownMobile />} /> */}
       </Routes>
       <Footer />
     </BrowserRouter>

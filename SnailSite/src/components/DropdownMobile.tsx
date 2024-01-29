@@ -1,19 +1,9 @@
 import { Popover } from "@headlessui/react";
 import { Link } from "react-router-dom";
 
-export interface DropdownProps {
-  title: string;
-  subtitles: SubtitleItemArray;
-}
+import { DropdownProps } from "./Dropdown";
 
-interface SubtitleItem {
-  title: string;
-  to: string;
-  key: string;
-}
-export interface SubtitleItemArray extends Array<SubtitleItem> {}
-
-const Dropdown = ({ title, subtitles }: DropdownProps) => {
+const DropdownMobile = ({ title, subtitles }: DropdownProps) => {
   return (
     <Popover className="relative">
       <Popover.Button className="flex flex-wrap items-center gap-2 outline-none">
@@ -46,4 +36,4 @@ const Dropdown = ({ title, subtitles }: DropdownProps) => {
   );
 };
 
-export default Dropdown;
+export default DropdownMobile;

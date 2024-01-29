@@ -7,9 +7,9 @@ import "../embla.css";
 const SLIDE_COUNT = carouselLen + 1;
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
-const sectionOneBody: string = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`;
+const sectionOneBody: string = `Team 1257 Parallel Universe is an unparalleled FIRST team that strives to inspire passion for STEM. We design and fabricate robots for the FIRST Robotics Competition (FRC) in order to develop talent in STEM and prepare a new generation of innovators, leaders, and entrepreneurs. Our aspiration is to create a community excited about STEM at the Union County Vocational-Technical Schools and beyond through FRC and our community outreach programs. We aim to create an environment where teamwork fuels creative problem solving`;
 const sectionOne: SectionProps = {
-  heading: "Header",
+  heading: "About Us",
   body: sectionOneBody,
   imgSrc: "pics/slide-1.jpg",
   button: {
@@ -19,10 +19,10 @@ const sectionOne: SectionProps = {
   },
 };
 
-const sectionTwoBody: string = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`;
+const sectionTwoBody: string = `Parallel Universe is deeply committed to STEM outreach and education. Through the Raritan Valley Science and Technology Showcase, of which Team 1257 was a co-host, we raised awareness of FIRST core values to people of all ages. Through this event, which takes year-long coordination to execute, we were able to spread FIRST’s message to over ten thousand attendees across two days. Furthermore, Team 1257 members regularly volunteer at various FLL events.`;
 const sectionTwo: SectionProps = {
   textLeft: true,
-  heading: "Header",
+  heading: "Our Impact",
   body: sectionTwoBody,
   imgSrc: "pics/slide-2.jpg",
   button: {
@@ -34,7 +34,7 @@ const sectionTwo: SectionProps = {
 
 const ctaBody: string = `We are very very cool so that's why you should give us money pls.`;
 const cta: CallToActionProps = {
-  heading: "Call to Action",
+  heading: "Support Us",
   body: ctaBody,
   imgSrc: "pics/slide-1.jpg",
   button: {

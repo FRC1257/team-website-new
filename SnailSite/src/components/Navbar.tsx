@@ -1,9 +1,12 @@
+import { useState } from "react";
+
 import Dropdown, { SubtitleItemArray } from "./Dropdown";
 import { Link } from "react-router-dom";
 
 import galaxy from "./images/backgrounds/a3.png";
 
 import { Menu } from "@emotion-icons/evaicons-solid/Menu";
+import { Popover } from "@headlessui/react";
 
 const aboutItems: SubtitleItemArray = [
   { title: "Team Info", to: "info", key: "info" },
@@ -24,6 +27,8 @@ const resourcesItems: SubtitleItemArray = [
 ];
 
 const Navbar = () => {
+  const [open, setOpen] = useState<boolean>(false);
+
   return (
     <nav
       className="bg-cover bg-center flex lg:flex-col flex-row items-center p-4"
@@ -44,9 +49,30 @@ const Navbar = () => {
       >
         Parallel Universe
       </Link>
-      <div className="lg:hidden ml-auto">
-        <Menu size={32} color="white" />
+      <div className="lg:hidden ml-auto text-white">
+        <Popover>
+          <Popover.Button>
+            <Menu size={32} color="white" onClick={() => setOpen(!open)} />
+          </Popover.Button>
+          <Popover.Panel className="absolute w-full top-20 right-1 z-50">
+            <div className="z-50 flex flex-col text-left text-white text-lg font-semibold tracking-tight bg-gray-900 rounded-lg">
+              <div className="p-2 m-6">
+                <Dropdown title="About" subtitles={aboutItems} />
+              </div>
+              <div className="p-2 m-6">Outreach</div>
+              <div className="p-2 m-6">
+                <Dropdown title="Parents" subtitles={parentsItems} />
+              </div>
+              <div className="p-2 m-6">
+                <Dropdown title="Resources" subtitles={resourcesItems} />
+              </div>
+              <div className="p-2 m-6">Contact</div>
+              <div className="p-2 m-6">Sponsors</div>
+            </div>
+          </Popover.Panel>
+        </Popover>
       </div>
+
       <div className="lg:flex hidden justify-center">
         <ul className="flex justify-between items-center gap-4 text-white text-lg font-bold">
           <li className="p-4">
