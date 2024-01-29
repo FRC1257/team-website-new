@@ -24,8 +24,8 @@ const CallToAction = ({
   const [emblaRef] = useEmblaCarousel(options, [Autoplay({ delay: 3000 })]);
 
   return (
-    <div className="bg-purple-200 px-24 py-12">
-      <div className="grid grid-cols-2 gap-20 bg-green-300 border-[50px] border-green-300">
+    <div className="bg-purple-200 lg:px-24 lg:py-12 px-6 py-6">
+      <div className="grid lg:grid-cols-2 gap-10 bg-green-300 lg:border-[50px] border-green-300">
         <div className={`bg-red-300 ${textLeft ? "order-1" : ""}`}>
           <div className="embla">
             <div className="embla__viewport h-[480px]" ref={emblaRef}>
