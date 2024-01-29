@@ -21,13 +21,13 @@ const EmblaCarousel: React.FC<CarouselProps> = ({
 
   return (
     <div className="relative embla">
-      <div className="absolute left-10 top-52 z-10 text-white flex flex-col items-start w-1/3 gap-4">
-        <h1 className="text-6xl font-bold">UCVTS FRC Robotics Team 1257</h1>
-        <h2 className="text-4xl font-semibold">
+      <div className="absolute left-10 top-52 z-10 text-white flex flex-col items-start md:w-1/3 w-2/3 gap-4">
+        <h1 className="lg:text-6xl md:text-4xl text-2xl font-bold">UCVTS FRC Robotics Team 1257</h1>
+        <h2 className="lg:text-4xl md:text-2xl text-lg font-semibold">
           We are the coolest FRC Robotics Team in New Jersey.
         </h2>
         <Link to="/info">
-          <button className="bg-green-800 hover:bg-green-700 rounded-xl py-4 px-6 font-bold text-lg mt-4">
+          <button className="bg-green-800 hover:bg-green-700 rounded-xl py-4 lg:px-6 px-4 font-bold lg:text-lg text-md mt-4">
             Learn more
           </button>
         </Link>
