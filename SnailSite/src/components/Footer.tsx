@@ -8,17 +8,20 @@ import { Github } from "@emotion-icons/boxicons-logos/Github";
 
 const Footer = () => {
   return (
-    <div className="bg-gray-700 flex py-10 px-32">
-      <div className="grid grid-cols-3 justify-between w-full">
-        <div className="flex flex-col my-auto text-white">
-          <h1 className="text-3xl font-semibold">Parallel Universe</h1>
+    <div className="bg-gray-700 flex py-10 px-32 text-white">
+      <div className="grid grid-cols-3 justify-between items-center w-full">
+        <div className="lg:flex hidden flex-col">
+          <h1 className="lg:text-3xl font-semibold">Parallel Universe</h1>
           <p>FRC Team 1257</p>
         </div>
         <img
-          className="object-contain h-40 w-40 bg-black rounded-full justify-self-center"
+          className="object-contain lg:h-40 lg:w-40 w-24 h-24 bg-black rounded-full justify-self-center"
           src={"/pics/logos/biggerWhite.png"}
           alt="2023_bot.JPG"
         />
+        <div className="text-3xl lg:hidden block">
+          Parallel Universe
+        </div>
         <div className="text-white flex flex-col justify-center justify-self-end">
           <div className="flex flex-row items-center gap-2">
             <School size={16} />
