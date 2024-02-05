@@ -88,7 +88,7 @@ const Navbar = () => {
           <li className="p-4">Contact</li>
           <li className="p-4">Sponsors</li>
           <li className="p-4">
-            <button className="bg-purple-800 hover:bg-purple-700 rounded-xl py-2 px-4">
+            <button className="bg-secondary-700 hover:bg-secondary-6u00 rounded-xl py-2 px-4">
               Support Us
             </button>
           </li>

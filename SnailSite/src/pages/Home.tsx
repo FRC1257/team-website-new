@@ -7,14 +7,14 @@ import "../embla.css";
 const SLIDE_COUNT = carouselLen + 1;
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
-const sectionOneBody: string = `Team 1257 Parallel Universe is an unparalleled FIRST team that strives to inspire passion for STEM. We design and fabricate robots for the FIRST Robotics Competition (FRC) in order to develop talent in STEM and prepare a new generation of innovators, leaders, and entrepreneurs. Our aspiration is to create a community excited about STEM at the Union County Vocational-Technical Schools and beyond through FRC and our community outreach programs. We aim to create an environment where teamwork fuels creative problem solving`;
+const sectionOneBody: string = `Team 1257 Parallel Universe is an out of this world FIRST robotics team! We strive to inspire and cultivate a passion for STEM in a new generation of future innovators, leaders, and entrepreneurs. Through collaboration and teamwork, we design and curate a robot that competes in the FIRST Robotics Competition (FRC).`;
 const sectionOne: SectionProps = {
   heading: "About Us",
   body: sectionOneBody,
   imgSrc: "pics/slide-1.jpg",
   button: {
     text: "Learn more",
-    style: "bg-red-800 hover:bg-red-700 text-white",
+    style: "bg-primary-800 hover:bg-primary-700 text-white",
     to: "/info",
   },
 };
@@ -27,19 +27,19 @@ const sectionTwo: SectionProps = {
   imgSrc: "pics/slide-2.jpg",
   button: {
     text: "Learn more",
-    style: "bg-red-800 hover:bg-red-700 text-white",
+    style: "bg-primary-800 hover:bg-primary-700 text-white",
     to: "/info",
   },
 };
 
-const ctaBody: string = `We are very very cool so that's why you should give us money pls.`;
+const ctaBody: string = `Running an award-winning robotics team takes lots of financial contribution. We appreciate all the help we can get!`;
 const cta: CallToActionProps = {
   heading: "Support Us",
   body: ctaBody,
   imgSrc: "pics/slide-1.jpg",
   button: {
     text: "Learn more",
-    style: "bg-red-800 hover:bg-red-700 text-white",
+    style: "bg-white hover:bg-gray-300 text-black",
     to: "/info",
   },
   carouselProps: { slides: SLIDES },
@@ -50,7 +50,7 @@ const Home = () => {
   return (
     <div>
       <EmblaCarousel slides={SLIDES} />
-      <div className="py-12 bg-red-100">
+      <div className="py-12 bg-background">
         <Section {...sectionOne} />
         <Section {...sectionTwo} />
         <CallToAction {...cta} />

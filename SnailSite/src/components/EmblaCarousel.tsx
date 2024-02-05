@@ -27,7 +27,7 @@ const EmblaCarousel: React.FC<CarouselProps> = ({
           We are the coolest FRC Robotics Team in New Jersey.
         </h2>
         <Link to="/info">
-          <button className="bg-green-800 hover:bg-green-700 rounded-xl py-4 lg:px-6 px-4 font-bold lg:text-lg text-md mt-4">
+          <button className="bg-primary-800 hover:bg-primary-700 rounded-xl py-4 lg:px-6 px-4 font-bold lg:text-lg text-md mt-4">
             Learn more
           </button>
         </Link>
