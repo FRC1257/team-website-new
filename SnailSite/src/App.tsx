@@ -11,7 +11,6 @@ import Footer from "./components/Footer";
 import "./App.css";
 
 import LinkTree from "./pages/LinkTree";
-import DropdownMobile from "./components/DropdownMobile";
 
 function App() {
   return (
