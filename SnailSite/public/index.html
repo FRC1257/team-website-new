@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/pics/favicon/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" /> -->
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
@@ -32,7 +33,12 @@
     -->
     <title>Team 1257 | Parallel Universe</title>
   </head>
-  <body>
+  <script>
+    function toggleZoomScreen() {
+      document.body.style.zoom = 1 / window.devicePixelRatio;
+    }
+  </script>
+  <body onload="toggleZoomScreen()" onresize="toggleZoomScreen()">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
