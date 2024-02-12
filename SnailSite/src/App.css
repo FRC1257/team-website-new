@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (-webkit-device-pixel-ratio: 1.5) {
-  * {
-    zoom: 0.67;
-  }
-}
-
 .table thead th {
   text-align: center;
 }
