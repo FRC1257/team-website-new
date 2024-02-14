@@ -6,6 +6,7 @@ import { Instagram } from "@emotion-icons/boxicons-logos/Instagram";
 import { Youtube } from "@emotion-icons/boxicons-logos/Youtube";
 import { Github } from "@emotion-icons/boxicons-logos/Github";
 
+// TODO: remove image in mobile, just put name on left and info on right as icons
 const Footer = () => {
   return (
     <div className="bg-gray-700 flex py-10 px-32 text-white">

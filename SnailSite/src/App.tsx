@@ -12,6 +12,8 @@ import "./App.css";
 
 import LinkTree from "./pages/LinkTree";
 
+import ParagraphSection from "./components/ParagraphSection";
+
 function App() {
   return (
     <BrowserRouter>
@@ -26,7 +28,7 @@ function App() {
         <Route path="/linktree" element={<LinkTree />} />
         <Route path="*" element={<NotFound />} />
 
-        {/* <Route path="/test" element={<DropdownMobile />} /> */}
+        <Route path="/test" element={<ParagraphSection />} />
       </Routes>
       <Footer />
     </BrowserRouter>
