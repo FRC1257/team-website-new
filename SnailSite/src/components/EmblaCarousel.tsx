@@ -21,7 +21,7 @@ const EmblaCarousel: React.FC<CarouselProps> = ({
 
   return (
     <div className="relative embla">
-      <div className="absolute left-10 top-[20dvh] z-10 text-white flex flex-col items-start md:w-1/2 w-2/3 gap-4">
+      <div className="absolute left-10 top-[20dvh] z-10 text-white flex flex-col items-start md:w-1/2 w-2/3 gap-[1dvh]">
         <h1 className="lg:text-[3dvw] md:text-4xl text-2xl font-bold">
           UCVTS FRC Robotics Team 1257
         </h1>
