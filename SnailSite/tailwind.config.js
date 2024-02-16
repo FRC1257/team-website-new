@@ -14,6 +14,7 @@ export default {
         "5xl": "4.210rem",
       },
       fontFamily: {
+        sans: "Poppins",
         heading: "Poppins",
         body: "Poppins",
       },

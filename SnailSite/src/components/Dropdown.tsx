@@ -10,6 +10,7 @@ interface SubtitleItem {
   title: string;
   to: string;
   key: string;
+  external?: boolean;
 }
 export interface SubtitleItemArray extends Array<SubtitleItem> {}
 
@@ -35,8 +36,13 @@ const Dropdown = ({ title, subtitles }: DropdownProps) => {
       </Popover.Button>
       <Popover.Panel className="absolute top-14 right-1 z-10">
         <div className="flex flex-col text-left text-white text-md font-thin tracking-tight bg-gray-900 rounded-lg w-25">
-          {subtitles.map(({ title, to, key }) => (
-            <Link className="p-2 mx-2" to={to} key={key}>
+          {subtitles.map(({ title, to, key, external }) => (
+            <Link
+              className="p-2 mx-2"
+              to={to}
+              key={key}
+              target={external ? "_blank" : ""}
+            >
               {title}
             </Link>
           ))}

@@ -18,7 +18,12 @@ const aboutItems: SubtitleItemArray = [
 const parentsItems: SubtitleItemArray = [
   { title: "Forms", to: "forms", key: "forms" },
   { title: "Wishlist", to: "wishlist", key: "wishlist" },
-  { title: "Newsletter", to: "newsletter", key: "newsletter" },
+  {
+    title: "Newsletter",
+    to: "https://frc1257.github.io/blog",
+    key: "newsletter",
+    external: true,
+  },
 ];
 
 const resourcesItems: SubtitleItemArray = [
