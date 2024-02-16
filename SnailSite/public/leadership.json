@@ -1,0 +1,122 @@
+[
+    {
+      "name": "Victoria Gee",
+      "role": "President",
+      "school": "MHS",
+      "grade": "12",
+      "email": "vgee@ucvts.org"
+    },
+    {
+      "name": "Chris Cao",
+      "role": "Vice President",
+      "school": "MHS",
+      "grade": "11",
+      "email": "ccao@ucvts.org"
+    },
+    {
+      "name": "Gali Avni",
+      "role": "Team Manager",
+      "school": "MHS",
+      "grade": "11",
+      "email": "gavni@ucvts.org"
+    },
+    {
+      "name": "Owen Wasik",
+      "role": "Technical Director",
+      "school": "MHS",
+      "grade": "12",
+      "email": "owasik@ucvts.org"
+    },
+    {
+      "name": "Girish Noruthun",
+      "role": "Strategy Director",
+      "school": "AIT",
+      "grade": "11",
+      "email": "gnoruthun@ucvts.org"
+    },
+    {
+      "name": "Karen Saavedra",
+      "role": "Operations Director",
+      "school": "MHS",
+      "grade": "11",
+      "email": "ksaavedra@ucvts.org"
+    },
+    {
+      "name": "Keegan Healy",
+      "role": "Safety Director",
+      "school": "AAHS",
+      "grade": "11",
+      "email": "khealy@ucvts.org"
+    },
+    {
+      "name": "Erick Hernandez",
+      "role": "Build Manager",
+      "school": "MHS",
+      "grade": "12",
+      "email": "ehernandez1@ucvts.org"
+    },
+    {
+      "name": "Mauricio Sanchez",
+      "role": "Electronics Manager",
+      "school": "MHS",
+      "grade": "12",
+      "email": "msanchez5@ucvts.org"
+    },
+    {
+      "name": "Akash Dubey",
+      "role": "Programming Manager",
+      "school": "AIT",
+      "grade": "12",
+      "email": "adubey@ucvts.org"
+    },
+    {
+      "name": "Zandy Zhao",
+      "role": "Technical Liaison",
+      "school": "MHS",
+      "grade": "12",
+      "email": "zzhao1@ucvts.org"
+    },
+    {
+      "name": "Reva Venkatraghvan",
+      "role": "Technical Documentation Manager",
+      "school": "MHS",
+      "grade": "11",
+      "email": "rvenkatraghvan@ucvts.org"
+    },
+    {
+      "name": "Ali Bravo",
+      "role": "Scouting Manager",
+      "school": "UCT",
+      "grade": "11",
+      "email": "abravo@ucvts.org"
+    },
+    {
+      "name": "Arav Sachdeva",
+      "role": "App Manager",
+      "school": "AIT",
+      "grade": "12",
+      "email": "asachdeva@ucvts.org"
+    },
+    {
+      "name": "Mikaela Catuncan",
+      "role": "Sponsorship Manager",
+      "school": "MHS",
+      "grade": "11",
+      "email": "mcatuncan@ucvts.org"
+    },
+    {
+      "name": "Kayne Qiu",
+      "role": "Outreach Manager",
+      "school": "AIT",
+      "grade": "11",
+      "email": "jqiu1@ucvts.org"
+    },
+    {
+      "name": "Claire Qin",
+      "role": "Accounting Manager",
+      "school": "MHS",
+      "grade": "11",
+      "email": "cqin@ucvts.org"
+    }
+  ]
+  
