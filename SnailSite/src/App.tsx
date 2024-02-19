@@ -13,7 +13,6 @@ import "./App.css";
 import LinkTree from "./pages/LinkTree";
 
 import ParagraphSection from "./components/ParagraphSection";
-import BlobText from "./components/BlobText";
 
 function App() {
   return (
