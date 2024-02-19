@@ -30,7 +30,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
 
         <Route path="/test" element={<ParagraphSection />} />
-        <Route path="/t2" element={<BlobText />} />
+        {/* <Route path="/t2" element={<BlobText />} /> */}
       </Routes>
       <Footer />
     </BrowserRouter>
