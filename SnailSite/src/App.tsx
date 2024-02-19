@@ -13,6 +13,7 @@ import "./App.css";
 import LinkTree from "./pages/LinkTree";
 
 import ParagraphSection from "./components/ParagraphSection";
+import BlobText from "./components/BlobText";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
 
         <Route path="/test" element={<ParagraphSection />} />
+        <Route path="/t2" element={<BlobText />} />
       </Routes>
       <Footer />
     </BrowserRouter>

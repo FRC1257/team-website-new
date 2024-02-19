@@ -1,5 +1,6 @@
 import CallToAction, { CallToActionProps } from "../components/CallToAction";
 import EmblaCarousel from "../components/EmblaCarousel";
+import NewSection from "../components/NewSection";
 import Section, { SectionProps } from "../components/Section";
 import { carouselLen } from "../components/imageByIndex";
 import "../embla.css";
@@ -51,6 +52,7 @@ const Home = () => {
     <div>
       <EmblaCarousel slides={SLIDES} />
       <div className="py-12 bg-background">
+        <NewSection />
         <Section {...sectionOne} />
         <Section {...sectionTwo} />
         <CallToAction {...cta} />

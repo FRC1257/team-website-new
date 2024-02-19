@@ -49,7 +49,7 @@ const Navbar = () => {
         </div>
       </div>
       <Link
-        className="lg:text-center text-left text-white lg:text-[4dvw] text-3xl font-bold tracking-wide lg:mt-2 m-2"
+        className="lg:text-center text-left text-white lg:text-[3dvw] text-3xl font-bold tracking-wide lg:mt-2 m-2"
         to=""
       >
         Parallel Universe
