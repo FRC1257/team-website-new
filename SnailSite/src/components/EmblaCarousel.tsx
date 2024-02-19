@@ -25,8 +25,8 @@ const EmblaCarousel: React.FC<CarouselProps> = ({
         <h1 className="lg:text-[3dvw] md:text-4xl text-2xl font-bold">
           UCVTS FRC Robotics Team 1257
         </h1>
-        <h2 className="lg:text-[2.5dvw] md:text-2xl text-lg leading-none font-semibold">
-          We are the coolest FRC Robotics Team in New Jersey.
+        <h2 className="lg:text-[2.25dvw] md:text-2xl text-lg leading-none">
+          Promoting creativity, confidence, and leadership in STEM and business.
         </h2>
         <Link to="/info">
           <button className="bg-primary-800 hover:bg-primary-700 rounded-xl py-4 lg:px-6 px-4 font-bold lg:text-lg text-md mt-4">
