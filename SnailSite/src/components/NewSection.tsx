@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const NewSection = () => {
   return (
-    <div className="bg-background p-24">
+    <div>
       <div className="flex flex-col gap-2 text-white max-w-[72rem] mx-auto mb-24">
         <h1 className="text-center text-5xl font-bold">About Us</h1>
         <p className="text-center text-2xl leading-tight">

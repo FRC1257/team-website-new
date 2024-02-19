@@ -5,6 +5,8 @@ import Section, { SectionProps } from "../components/Section";
 import { carouselLen } from "../components/imageByIndex";
 import "../embla.css";
 
+import "./Home.css";
+
 const SLIDE_COUNT = carouselLen + 1;
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
@@ -52,10 +54,18 @@ const Home = () => {
     <div>
       <EmblaCarousel slides={SLIDES} />
       <div className="py-12 bg-background">
-        <NewSection />
-        <Section {...sectionOne} />
-        <Section {...sectionTwo} />
-        <CallToAction {...cta} />
+        <div className="p-24 top-div">
+          <NewSection />
+        </div>
+        <div className="bottom-div top-invert bg-red-300">
+          <Section {...sectionOne} />
+        </div>
+        <div className="bottom-invert top-arrow bg-purple-300">
+          <Section {...sectionTwo} />
+        </div>
+        <div className="bottom-arrow">
+          <CallToAction {...cta} />
+        </div>
       </div>
     </div>
   );

@@ -10,8 +10,8 @@ export interface SectionProps {
 
 const Section = ({ textLeft, heading, body, imgSrc, button }: SectionProps) => {
   return (
-    <div className="grid lg:grid-cols-2 lg:gap-20 gap-10 bg-background lg:px-24 lg:py-12 px-6 py-6">
-      <div className={`bg-background ${textLeft ? "lg:order-1" : ""}`}>
+    <div className="grid lg:grid-cols-2 lg:gap-20 gap-10 lg:px-24 lg:py-12 px-6 py-6">
+      <div className={`${textLeft ? "lg:order-1" : ""}`}>
         <div className="text-6xl text-center lg:text-left block lg:hidden font-semibold text-white">
           {heading}
         </div>
@@ -21,7 +21,7 @@ const Section = ({ textLeft, heading, body, imgSrc, button }: SectionProps) => {
           alt="myimg"
         />
       </div>
-      <div className="bg-background">
+      <div className="">
         <div className="text-[6dvh] mb-[1dvh] hidden lg:block font-semibold text-white">
           {heading}
         </div>
