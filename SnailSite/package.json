@@ -15,6 +15,7 @@
     "@headlessui/react": "^1.7.17",
     "@mui/base": "^5.0.0-beta.24",
     "@mui/material": "^5.14.18",
+    "@tabler/icons-react": "^2.25.0",
     "@tsparticles/engine": "^3.2.2",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.2.2",
@@ -33,6 +34,7 @@
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.20.0",
     "sort-by": "^1.2.0",
+    "tabler": "^1.0.0-alpha.8",
     "tailwind-merge": "^2.2.1"
   },
   "devDependencies": {

@@ -7,7 +7,12 @@ import {
   useVelocity,
   useSpring,
 } from "framer-motion";
-import { cn } from "@/utils/cn";
+import { ClassValue, clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
+
+function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
 
 export const TracingBeam = ({
   children,

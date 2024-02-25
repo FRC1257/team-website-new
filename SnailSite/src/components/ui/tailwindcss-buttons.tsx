@@ -1,7 +1,12 @@
 "use client";
 import React from "react";
 import { IconClipboard } from "@tabler/icons-react";
-import { cn } from "@/utils/cn";
+import { ClassValue, clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
+
+function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
 
 export const ButtonsCard = ({
   children,

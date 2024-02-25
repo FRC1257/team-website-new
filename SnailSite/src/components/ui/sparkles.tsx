@@ -5,7 +5,13 @@ import { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import type { Container, Engine } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
-import { cn } from "@/utils/cn";
+import { ClassValue, clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
+
+function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
+
 import { motion, useAnimation } from "framer-motion";
 
 type ParticlesProps = {
