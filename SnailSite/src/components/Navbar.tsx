@@ -1,3 +1,6 @@
+// TODO: have child Dropdown button to collapse navbar onClick
+// TOOD: add different dvh breakpoints for mobile nav
+
 import { useState } from "react";
 
 import Dropdown, { SubtitleItemArray } from "./Dropdown";
@@ -74,12 +77,14 @@ const Navbar = () => {
           <Popover.Button>
             <Menu size={32} color="white" onClick={() => setOpen(!open)} />
           </Popover.Button>
-          <Popover.Panel className="absolute w-full top-20 right-1 z-50">
+          <Popover.Panel className="absolute w-full top-[20dvh] right-[0.25dvw] z-50">
             <div className="z-50 flex flex-col text-left text-white text-lg font-semibold tracking-tight bg-gray-900 rounded-lg">
               <div className="p-2 m-6">
                 <Dropdown title="About" subtitles={aboutItems} />
               </div>
-              <div className="p-2 m-6">Outreach</div>
+              <div className="p-2 m-6">
+                <Link to="outreach">Outreach</Link>
+              </div>
               <div className="p-2 m-6">
                 <Dropdown title="Parents" subtitles={parentsItems} />
               </div>
@@ -87,7 +92,9 @@ const Navbar = () => {
                 <Dropdown title="Resources" subtitles={resourcesItems} />
               </div>
               {/* <div className="p-2 m-6">Contact</div> */}
-              <div className="p-2 m-6">Sponsors</div>
+              <div className="p-2 m-6">
+                <Link to="/sponsors">Sponsors</Link>
+              </div>
             </div>
           </Popover.Panel>
         </Popover>
