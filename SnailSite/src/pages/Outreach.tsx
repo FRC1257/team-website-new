@@ -4,11 +4,15 @@ import cubscouts from "../../public/pics/cubscouts.png";
 
 const Outreach = () => {
   return (
-    <div className="p-24 bg-background">
+    <div className="lg:p-24 p-12 bg-background">
       <div className="flex flex-col gap-2 text-white max-w-[72rem] mx-auto mb-12">
-        <h1 className="text-center text-5xl font-bold mb-8">Our Outreach</h1>
-        <h2 className="text-center text-4xl font-bold mb-4">Robocon (RVSTS)</h2>
-        <div className="text-center flex flex-col gap-4 text-xl leading-tight">
+        <h1 className="text-center lg:text-5xl text-3xl font-bold mb-8">
+          Our Outreach
+        </h1>
+        <h2 className="text-center lg:text-4xl text-2xl font-bold mb-4">
+          Robocon (RVSTS)
+        </h2>
+        <div className="text-center flex flex-col gap-4 lg:text-xl text-md leading-tight">
           <p className="">
             In the past 1-2 years, we have made great strides positioning
             ourselves to better serve our community. In September 2022, we
@@ -22,7 +26,7 @@ const Outreach = () => {
             robotics teams participating, we hosted 14 FLL teams, 29 FTC teams
             (152 students), and 24 FRC teams.
           </p>
-          <p>
+          <p className="hidden lg:block">
             RVSTS hosted many different outreach rooms, including the FIRST Lego
             League room, Robot Driving, FIRST Tech Challenge room and
             competition, STEAM Station, and Investigation Alley. The FIRST Lego
@@ -47,7 +51,7 @@ const Outreach = () => {
             to disclose sales, said they "were VERY happy with sales [that]
             weekend."
           </p>
-          <p>
+          <p className="hidden lg:block">
             We also track the impact of RVSTS through more qualitative metrics.
             During each of our impact events, we interview students, volunteers,
             and organizers to see the impact made and learn how we can improve
@@ -70,10 +74,10 @@ const Outreach = () => {
             height={360}
             className="mx-auto my-12"
           />
-          <h2 className="text-center text-4xl font-bold mb-4">
+          <h2 className="text-center lg:text-4xl text-2xl font-bold mb-4">
             Hydrocar Challenge
           </h2>
-          <div className="text-center flex flex-col gap-4 text-xl leading-tight">
+          <div className="text-center flex flex-col gap-4 lg:text-xl text-md leading-tight">
             In fall of 2023, we founded and ran the inaugural HydroCar
             Engineering Competition, available to students in our school
             district. The Hydrogen Car Challenge brings together high school
@@ -90,10 +94,10 @@ const Outreach = () => {
             alt="placeholder"
             className="mx-auto my-12 w-[720px] h-[360px]"
           />
-          <h2 className="text-center text-4xl font-bold mb-4">
+          <h2 className="text-center lg:text-4xl text-2xl font-bold mb-4">
             Cub Scout Visits
           </h2>
-          <div className="text-center flex flex-col gap-4 text-xl leading-tight mb-6">
+          <div className="text-center flex flex-col gap-4 lg:text-xl text-md leading-tight mb-6">
             Team 1257 also hosts girl and boy scout troops to inspire them to
             pursue STEM. Visiting scout troops bonder over team-build
             activities, visit robotics subteams to learn about robot
@@ -104,7 +108,7 @@ const Outreach = () => {
           <img
             src={cubscouts}
             alt="placeholder"
-            className="mx-auto my-12 w-[720px] h-[360px]"
+            className="mx-auto my-12 w-[720px] h-auto"
           />
         </div>
       </div>

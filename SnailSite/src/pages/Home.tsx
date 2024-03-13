@@ -65,8 +65,8 @@ const Home = () => {
   return (
     <div>
       <EmblaCarousel slides={SLIDES} />
-      <div className="bg-background">
-        <div className="p-24 top-div bg-teal-950">
+      <div className="bg-emerald-950">
+        <div className="p-24 top-div bg-background">
           <div>
             <div className="flex flex-col gap-2 text-white max-w-[72rem] mx-auto lg:mb-24 mb-6">
               <h1 className="text-center lg:text-5xl text-3xl font-bold">
@@ -129,7 +129,7 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className="bottom-invert top-arrow p-24 bg-teal-950">
+        <div className="bottom-invert top-arrow p-24 bg-background">
           <div>
             <div className="flex flex-col gap-2 text-white max-w-[72rem] mx-auto mb-12">
               <h1 className="text-center lg:text-5xl text-3xl font-bold">
@@ -160,7 +160,9 @@ const Home = () => {
         <div className="bottom-arrow bg-gradient-to-r p-16 from-purple-600 from-50% to-blue-400 ">
           <div>
             <div className="flex flex-col gap-2 text-white max-w-[72rem] mx-auto mb-12">
-              <h1 className="text-center lg:text-5xl text-3xl font-bold">Get Involved</h1>
+              <h1 className="text-center lg:text-5xl text-3xl font-bold">
+                Get Involved
+              </h1>
               <p className="text-center lg:text-2xl text-lg leading-tight">
                 Running an award-winning robotics team takes significant
                 personal and financial contribution. We are always seeking new
