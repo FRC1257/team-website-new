@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+td {
+  vertical-align: top;
+}
+
+th,
+td {
+  padding: 2dvw;
+}
+
 #awards > .awards-section p {
   text-align: center;
 }
@@ -23,5 +32,5 @@
 }
 
 table {
-  width: 60dvw;
+  width: 70dvw;
 }

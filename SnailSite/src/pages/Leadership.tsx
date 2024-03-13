@@ -52,7 +52,9 @@ const Leadership: React.FC = () => {
 
   return (
     <div className="text-center pr-10 pl-10 pt-3 pb-10 bg-background">
-      <h1 className="text-5xl font-bold mb-4 text-white">Student Leadership</h1>
+      <h1 className="lg:text-5xl text-3xl font-bold mb-4 text-white">
+        Student Leadership
+      </h1>
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {leadershipData.map((leader) => (
           <div

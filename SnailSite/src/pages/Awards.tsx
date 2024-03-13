@@ -5,15 +5,15 @@ const Awards = () => {
     <section id="awards" className="bg-background">
       <div className="p-10">
         <div className="">
-          <h1 className="text-5xl font-bold text-white text-center mb-4">
+          <h1 className="lg:text-5xl text-3xl font-bold text-white text-center mb-4">
             Awards
           </h1>
-          <p className="text-2xl font-semibold text-white text-center mx-72 mb-10">
+          <p className="lg:text-2xl text-md font-semibold text-white text-center lg:mx-72 mb-10">
             Parallel Universe is pround to be an award winning team every year!
             From District Winner, to Gracious Professionalism, to Engineering
             Impact, Team 1257 has won it all!
           </p>
-          <table className="table text-center text-white mx-auto mb-10">
+          <table className="table text-center text-white lg:text-md text-sm mx-auto mb-10">
             <thead>
               <tr>
                 <th>Year</th>
