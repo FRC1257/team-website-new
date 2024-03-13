@@ -5,12 +5,13 @@ import { EmailOutline } from "@emotion-icons/evaicons-outline/EmailOutline";
 import { Instagram } from "@emotion-icons/boxicons-logos/Instagram";
 import { Youtube } from "@emotion-icons/boxicons-logos/Youtube";
 import { Github } from "@emotion-icons/boxicons-logos/Github";
+import { Link } from "react-router-dom";
 
 // TODO: remove image in mobile, just put name on left and info on right as icons
 const Footer = () => {
   return (
-    <div className="bg-gray-700 flex py-10 px-32 text-white">
-      <div className="grid grid-cols-3 justify-between items-center w-full">
+    <div className="bg-gray-700 flex lg:py-10 lg:px-32 py-20 text-white">
+      <div className="hidden lg:grid lg:grid-cols-3 justify-between items-center w-full">
         <div className="lg:flex hidden flex-col">
           <h1 className="lg:text-3xl font-semibold">Parallel Universe</h1>
           <p>FRC Team 1257</p>
@@ -20,9 +21,7 @@ const Footer = () => {
           src={"/pics/logos/biggerWhite.png"}
           alt="2023_bot.JPG"
         />
-        <div className="text-3xl lg:hidden block">
-          Parallel Universe
-        </div>
+        <div className="text-3xl lg:hidden block">Parallel Universe</div>
         <div className="text-white flex flex-col justify-center justify-self-end">
           <div className="flex flex-row items-center gap-2">
             <School size={16} />
@@ -42,15 +41,44 @@ const Footer = () => {
           </div>
           <div className="flex flex-row items-center mt-2 gap-2">
             <div className="rounded-full bg-black p-1">
-              <Instagram size={32} />
+              <Link to="https://www.instagram.com/frc1257/" target="blank">
+                <Instagram size={32} />
+              </Link>
             </div>
             <div className="rounded-full bg-black p-1">
-              <Youtube size={32} />
+              <Link
+                to="https://www.youtube.com/@ParallelUniverse1257"
+                target="blank"
+              >
+                <Youtube size={32} />
+              </Link>
             </div>
             <div className="rounded-full bg-black p-1">
-              <Github size={32} />
+              <Link to="https://github.com/FRC1257" target="blank">
+                <Github size={32} />
+              </Link>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="flex lg:hidden flex-row items-center justify-center mx-auto gap-2">
+        <div className="rounded-full bg-black p-4">
+          <Link to="https://www.instagram.com/frc1257/" target="blank">
+            <Instagram size={48} />
+          </Link>
+        </div>
+        <div className="rounded-full bg-black p-4">
+          <Link
+            to="https://www.youtube.com/@ParallelUniverse1257"
+            target="blank"
+          >
+            <Youtube size={48} />
+          </Link>
+        </div>
+        <div className="rounded-full bg-black p-4">
+          <Link to="https://github.com/FRC1257" target="blank">
+            <Github size={48} />
+          </Link>
         </div>
       </div>
     </div>
