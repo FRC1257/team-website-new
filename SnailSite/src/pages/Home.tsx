@@ -1,15 +1,16 @@
 import BlobText from "../components/BlobText";
 import Button from "../components/Button";
 // import CallToAction, { CallToActionProps } from "../components/CallToAction";
-import EmblaCarousel, { CarouselProps } from "../components/EmblaCarousel";
+import EmblaCarousel from "../components/EmblaCarousel";
+// import { CarouselProps } from "../components/EmblaCarousel";
 // import NewSection from "../components/NewSection";
 // import Section, { SectionProps } from "../components/Section";
 import { carouselLen } from "../components/imageByIndex";
 import "../embla.css";
 
-import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
-import imageByIndex from "../components/imageByIndex";
+// import useEmblaCarousel from "embla-carousel-react";
+// import Autoplay from "embla-carousel-autoplay";
+// import imageByIndex from "../components/imageByIndex";
 
 import "./Home.css";
 
@@ -56,11 +57,11 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
 // TODO: mobile friendly
 
-const carouselProps: CarouselProps = { slides: SLIDES };
+// const carouselProps: CarouselProps = { slides: SLIDES };
 
 const Home = () => {
-  const { slides, options } = carouselProps;
-  const [emblaRef] = useEmblaCarousel(options, [Autoplay({ delay: 3000 })]);
+  // const { slides, options } = carouselProps;
+  // const [emblaRef] = useEmblaCarousel(options, [Autoplay({ delay: 3000 })]);
   return (
     <div>
       <EmblaCarousel slides={SLIDES} />
@@ -128,15 +129,19 @@ const Home = () => {
               </p>
             </div>
             <div className="flex flex-col items-center">
-              <img
-                src="https://placehold.co/640x360"
-                alt="placeholder"
+              <iframe
+                width="640"
+                height="360"
+                src="https://www.youtube.com/embed/3crFpGlAGOU?si=SC3A5RL_Z2zJeFIT"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
                 className="mb-12"
-              />
+              ></iframe>
               <Button
                 text="Learn more"
                 style="bg-green-700 hover:bg-green-500 text-white blob-green"
-                to="/info"
+                to="/outreach"
               />
             </div>
           </div>
@@ -152,7 +157,7 @@ const Home = () => {
               </p>
             </div>
             <div className="flex flex-col items-center max-w-[72rem] m-auto">
-              <div className="emblaCTA mb-12">
+              {/* <div className="emblaCTA mb-12">
                 <div className="embla__viewport" ref={emblaRef}>
                   <div className="embla__container">
                     {slides.map((index) => (
@@ -169,11 +174,11 @@ const Home = () => {
                     ))}
                   </div>
                 </div>
-              </div>
+              </div> */}
               <Button
                 text="Learn more"
                 style="bg-white text-black"
-                to="/info"
+                to="/support"
               />
             </div>
           </div>
