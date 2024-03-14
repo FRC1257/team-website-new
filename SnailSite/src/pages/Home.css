@@ -1,0 +1,33 @@
+/* https://css-generators.com/ */
+
+.top-div {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 60px));
+}
+.bottom-div {
+  clip-path: polygon(0 0, 100% 60px, 100% 100%, 0 100%);
+  margin-top: -30px;
+}
+
+/* modified from 100% 0% to 100% 8% so top-invert matches up */
+/* https://bennettfeely.com/clippy/ */
+.top-invert {
+  clip-path: polygon(0 0, 100% 60px, 100% calc(100% - 60px), 0 100%);
+}
+.bottom-invert {
+  clip-path: polygon(0 60px, 100% 0, 100% 100%, 0 100%);
+  margin-top: -30px;
+}
+
+.top-arrow {
+  clip-path: polygon(
+    0 60px,
+    100% 0,
+    100% calc(100% - 40px),
+    50% 100%,
+    0 calc(100% - 40px)
+  );
+}
+.bottom-arrow {
+  clip-path: polygon(0 0, 50% 40px, 100% 0, 100% 100%, 0 100%);
+  margin-top: -10px;
+}

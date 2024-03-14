@@ -1,0 +1,36 @@
+.table thead th {
+  text-align: center;
+}
+
+td {
+  vertical-align: top;
+}
+
+th,
+td {
+  padding: 2dvw;
+}
+
+#awards > .awards-section p {
+  text-align: center;
+}
+
+#awards a:hover {
+  color: white;
+}
+
+.awards-title {
+  margin-top: 1.5em;
+}
+
+#about {
+  text-align: center;
+}
+
+#about .row {
+  position: relative;
+}
+
+table {
+  width: 70dvw;
+}

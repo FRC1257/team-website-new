@@ -1,3 +1,6 @@
+// TODO: have child Dropdown button to collapse navbar onClick
+// TOOD: add different dvh breakpoints for mobile nav
+
 import { useState } from "react";
 
 import Dropdown, { SubtitleItemArray } from "./Dropdown";
@@ -10,14 +13,19 @@ import { Popover } from "@headlessui/react";
 
 const aboutItems: SubtitleItemArray = [
   { title: "Team Info", to: "info", key: "info" },
-  { title: "History", to: "history", key: "history" },
+  // { title: "History", to: "history", key: "history" },
   { title: "Awards", to: "awards", key: "awards" },
   { title: "Leadership", to: "leadership", key: "leadership" },
 ];
 
 const parentsItems: SubtitleItemArray = [
-  { title: "Forms", to: "forms", key: "forms" },
-  { title: "Wishlist", to: "wishlist", key: "wishlist" },
+  // { title: "Forms", to: "forms", key: "forms" },
+  {
+    title: "Wishlist",
+    to: "https://www.amazon.com/hz/wishlist/printview/10BWUEU7XC1E1?target=_blank&ref_=lv_pv&filter=unpurchased&sort=default",
+    key: "wishlist",
+    external: true,
+  },
   {
     title: "Newsletter",
     to: "https://frc1257.github.io/blog",
@@ -27,8 +35,18 @@ const parentsItems: SubtitleItemArray = [
 ];
 
 const resourcesItems: SubtitleItemArray = [
-  { title: "Documentation", to: "docs", key: "docs" },
-  { title: "Handbook", to: "book", key: "book" },
+  {
+    title: "Documentation",
+    to: "https://docs.google.com/document/d/161gJzyOHGn3c9_r7zEpRzqucXN_SCO8SX5lyh6rMZy0/edit?usp=sharing",
+    key: "docs",
+    external: true,
+  },
+  {
+    title: "Handbook",
+    to: "https://docs.google.com/document/d/19TPxdzMEWFnx3xjKsc1DgqhJ7yiGB8YVfXHIzYRunEU/edit?usp=sharing",
+    key: "book",
+    external: true,
+  },
 ];
 
 const Navbar = () => {
@@ -49,7 +67,7 @@ const Navbar = () => {
         </div>
       </div>
       <Link
-        className="lg:text-center text-left text-white lg:text-[4dvw] text-3xl font-bold tracking-wide lg:mt-2 m-2"
+        className="lg:text-center text-left text-white lg:text-[3dvw] text-3xl font-bold tracking-wide lg:mt-2 m-2"
         to=""
       >
         Parallel Universe
@@ -59,20 +77,24 @@ const Navbar = () => {
           <Popover.Button>
             <Menu size={32} color="white" onClick={() => setOpen(!open)} />
           </Popover.Button>
-          <Popover.Panel className="absolute w-full top-20 right-1 z-50">
+          <Popover.Panel className="absolute w-full top-[20dvh] right-[0.25dvw] z-50">
             <div className="z-50 flex flex-col text-left text-white text-lg font-semibold tracking-tight bg-gray-900 rounded-lg">
               <div className="p-2 m-6">
                 <Dropdown title="About" subtitles={aboutItems} />
               </div>
-              <div className="p-2 m-6">Outreach</div>
+              <div className="p-2 m-6">
+                <Link to="outreach">Outreach</Link>
+              </div>
               <div className="p-2 m-6">
                 <Dropdown title="Parents" subtitles={parentsItems} />
               </div>
               <div className="p-2 m-6">
                 <Dropdown title="Resources" subtitles={resourcesItems} />
               </div>
-              <div className="p-2 m-6">Contact</div>
-              <div className="p-2 m-6">Sponsors</div>
+              {/* <div className="p-2 m-6">Contact</div> */}
+              <div className="p-2 m-6">
+                <Link to="/sponsors">Sponsors</Link>
+              </div>
             </div>
           </Popover.Panel>
         </Popover>
@@ -83,18 +105,24 @@ const Navbar = () => {
           <li className="p-4">
             <Dropdown title="About" subtitles={aboutItems} />
           </li>
-          <li className="p-4">Outreach</li>
+          <li className="p-4">
+            <Link to="outreach">Outreach</Link>
+          </li>
           <li className="p-4">
             <Dropdown title="Parents" subtitles={parentsItems} />
           </li>
           <li className="p-4">
             <Dropdown title="Resources" subtitles={resourcesItems} />
           </li>
-          <li className="p-4">Contact</li>
-          <li className="p-4">Sponsors</li>
+          {/* <li className="p-4">
+            <Link to="contact">Contact</Link>
+          </li> */}
           <li className="p-4">
-            <button className="bg-secondary-700 hover:bg-secondary-6u00 rounded-xl py-2 px-4">
-              Support Us
+            <Link to="/sponsors">Sponsors</Link>
+          </li>
+          <li className="p-4">
+            <button className="bg-secondary-700 hover:bg-secondary-600 rounded-xl py-2 px-4">
+              <Link to="Support">Support Us</Link>
             </button>
           </li>
         </ul>
