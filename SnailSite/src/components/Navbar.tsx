@@ -91,7 +91,9 @@ const Navbar = () => {
               <div className="p-2 m-6">
                 <Dropdown title="Resources" subtitles={resourcesItems} />
               </div>
-              {/* <div className="p-2 m-6">Contact</div> */}
+              <div className="p-2 m-6">
+                <Link to="/gallery">Gallery</Link>
+              </div>
               <div className="p-2 m-6">
                 <Link to="/sponsors">Sponsors</Link>
               </div>
@@ -114,9 +116,9 @@ const Navbar = () => {
           <li className="p-4">
             <Dropdown title="Resources" subtitles={resourcesItems} />
           </li>
-          {/* <li className="p-4">
-            <Link to="contact">Contact</Link>
-          </li> */}
+          <li className="p-4">
+            <Link to="/gallery">Gallery</Link>
+          </li>
           <li className="p-4">
             <Link to="/sponsors">Sponsors</Link>
           </li>

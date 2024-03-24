@@ -17,7 +17,7 @@ const EmblaCarousel: React.FC<CarouselProps> = ({
   slides,
   options,
 }: CarouselProps) => {
-  const [emblaRef] = useEmblaCarousel(options, [Autoplay({ delay: 3000 })]);
+  const [emblaRef] = useEmblaCarousel(options, [Autoplay({ delay: 4000 })]);
 
   return (
     <div className="relative embla">
