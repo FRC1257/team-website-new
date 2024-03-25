@@ -16,6 +16,7 @@ import Awards from "./pages/Awards";
 import Outreach from "./pages/Outreach";
 import Support from "./pages/Support";
 import Sponsors from "./pages/Sponsors";
+import Gallery from "./pages/Gallery";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/donate" element={<Donate />} />
         <Route path="/linktree" element={<LinkTree />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/gallery" element={<Gallery />} />
 
         <Route path="/test" element={<ParagraphSection />} />
         {/* <Route path="/t2" element={<BlobText />} /> */}
