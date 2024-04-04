@@ -10,7 +10,7 @@ const Section = ({ textLeft, body, imgSrc }: SectionProps) => {
     <div className="flex flex-row gap-10 bg-red-300">
       <div className={`${textLeft ? "lg:order-1" : ""}`}>
         <img
-          className="lg:block hidden w-[720px] h-auto"
+          className="lg:block hidden w-full h-auto"
           src={imgSrc}
           alt="myimg"
         />
