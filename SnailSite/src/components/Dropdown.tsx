@@ -1,5 +1,5 @@
 import { Popover } from "@headlessui/react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export interface DropdownProps {
   title: string;
@@ -37,14 +37,14 @@ const Dropdown = ({ title, subtitles }: DropdownProps) => {
       <Popover.Panel className="absolute top-14 right-1 z-10">
         <div className="flex flex-col text-left text-white text-md font-thin tracking-tight bg-gray-900 rounded-lg w-25">
           {subtitles.map(({ title, to, key, external }) => (
-            <Link
+            <NavLink
               className="p-2 mx-2"
               to={to}
               key={key}
               target={external ? "_blank" : ""}
             >
               {title}
-            </Link>
+            </NavLink>
           ))}
         </div>
       </Popover.Panel>
