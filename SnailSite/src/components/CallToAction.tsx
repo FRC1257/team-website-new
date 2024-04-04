@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Button, { ButtonProps } from "./Button";
 import { CarouselProps } from "./EmblaCarousel";
 import { SectionProps } from "./Section";
 
@@ -7,6 +7,11 @@ import Autoplay from "embla-carousel-autoplay";
 import imageByIndex from "./imageByIndex";
 
 export interface CallToActionProps extends SectionProps {
+  textLeft?: boolean;
+  body: string;
+  imgSrc?: string;
+  heading: string;
+  button: ButtonProps;
   carouselProps: CarouselProps;
 }
 
