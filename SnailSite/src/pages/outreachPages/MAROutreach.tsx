@@ -13,11 +13,7 @@ const MAROutreach = () => {
           <div className="flex flex-row">
             <Card title="Robocon" imgSrc="" to="/outreach/mar/robocon" />
             <Card title="Menlo Mashup" imgSrc="" to="/outreach/mar/menlo" />
-            <Card
-              title="Team Colabs"
-              imgSrc=""
-              to="/outreach/local/crossteam"
-            />
+            <Card title="Team Colabs" imgSrc="" to="/outreach/mar/crossteam" />
           </div>
         </div>
       </div>
