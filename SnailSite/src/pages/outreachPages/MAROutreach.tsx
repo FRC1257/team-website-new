@@ -1,5 +1,9 @@
 import Card from "../../components/Card";
 
+import roboconlogo from "../../components/images/outreach/cardlogos/roboconlogo.png";
+import menlologo from "../../components/images/outreach/cardlogos/menlologo.jpg";
+import crossteamlogo from "../../components/images/outreach/cardlogos/crossteamlogo.png";
+
 const MAROutreach = () => {
   return (
     <div>
@@ -11,9 +15,21 @@ const MAROutreach = () => {
       <div className="lg:p-24 p-12 bg-background">
         <div className="lg:p-24 p-12 bg-background">
           <div className="flex flex-row">
-            <Card title="Robocon" imgSrc="" to="/outreach/mar/robocon" />
-            <Card title="Menlo Mashup" imgSrc="" to="/outreach/mar/menlo" />
-            <Card title="Team Colabs" imgSrc="" to="/outreach/mar/crossteam" />
+            <Card
+              title="Robocon"
+              imgSrc={roboconlogo}
+              to="/outreach/mar/robocon"
+            />
+            <Card
+              title="Menlo Mashup"
+              imgSrc={menlologo}
+              to="/outreach/mar/menlo"
+            />
+            <Card
+              title="Team Colabs"
+              imgSrc={crossteamlogo}
+              to="/outreach/mar/crossteam"
+            />
           </div>
         </div>
       </div>
