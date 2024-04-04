@@ -13,10 +13,11 @@ import LinkTree from "./pages/LinkTree";
 import ParagraphSection from "./components/ParagraphSection";
 import Info from "./pages/Info";
 import Awards from "./pages/Awards";
-import Outreach from "./pages/Outreach";
+// import Outreach from "./pages/Outreach";
 import Support from "./pages/Support";
 import Sponsors from "./pages/Sponsors";
 import Gallery from "./pages/Gallery";
+import OutreachRouter from "./pages/OutreachRouter";
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/info" element={<Info />} />
         <Route path="/awards" element={<Awards />} />
-        <Route path="/outreach" element={<Outreach />} />
+        <Route path="/outreach/*" element={<OutreachRouter />} />
         <Route path="/support" element={<Support />} />
         <Route path="/sponsors" element={<Sponsors />} />
         <Route path="/notfound" element={<NotFound />} />

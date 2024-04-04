@@ -17,7 +17,7 @@ const Support = () => {
         <p className="text-center lg:text-2xl text-lg leading-tight mb-8">
           Email: mcook@ucvts.org
         </p>
-        <div className="flex flex-col items-center lg:flex-row font-bold lg:text-2xl text-lg text-white lg:mx-auto gap-2 lg:gap-10">
+        <div className="flex flex-col items-center lg:flex-row font-bold lg:text-2xl text-lg text-white lg:mx-auto gap-2lg:gap-10">
           <Link
             to="https://docs.google.com/document/d/1ZoW9DAPcqLLtVPsWB_YV7cHA_4WZDqq0P9M5zRdxW9U/edit?usp=sharing"
             target="blank"
