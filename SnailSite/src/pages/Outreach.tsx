@@ -7,7 +7,7 @@ const Outreach = () => {
     <div className="lg:p-24 p-12 bg-background">
       <div className="flex flex-col gap-2 text-white max-w-[72rem] mx-auto mb-12">
         <h1 className="text-center lg:text-5xl text-3xl font-bold mb-8">
-          Our Outreach
+          Outreach Initiatives
         </h1>
         <h2 className="text-center lg:text-4xl text-2xl font-bold mb-4">
           Robocon (RVSTS)
