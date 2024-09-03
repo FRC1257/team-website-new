@@ -7,15 +7,13 @@ import MAROutreachRouter from "./outreachPages/MAROutreachRouter";
 
 const OutreachRouter = () => {
   return (
-    <>
-      <Routes>
-        <Route path="" element={<Outreach />} />
-        <Route path="school" element={<SchoolOutreach />} />
-        <Route path="local/*" element={<LocalOutreachRouter />} />
-        <Route path="mar/*" element={<MAROutreachRouter />} />
-        <Route path="first" element={<FIRSTOutreach />} />
-      </Routes>
-    </>
+    <Routes>
+      <Route path="" element={<Outreach />} />
+      <Route path="school" element={<SchoolOutreach />} />
+      <Route path="local/*" element={<LocalOutreachRouter />} />
+      <Route path="mar/*" element={<MAROutreachRouter />} />
+      <Route path="first" element={<FIRSTOutreach />} />
+    </Routes>
   );
 };
 

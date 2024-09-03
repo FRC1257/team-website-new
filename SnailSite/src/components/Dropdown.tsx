@@ -1,4 +1,5 @@
 import { Popover } from "@headlessui/react";
+import { useRef } from "react";
 import { NavLink } from "react-router-dom";
 
 export interface DropdownProps {
@@ -14,10 +15,16 @@ interface SubtitleItem {
 }
 export interface SubtitleItemArray extends Array<SubtitleItem> {}
 
+// https://stackoverflow.com/a/67269250
 const Dropdown = ({ title, subtitles }: DropdownProps) => {
+  const buttonRef = useRef<HTMLButtonElement>(null);
+
   return (
     <Popover className="relative">
-      <Popover.Button className="flex flex-wrap items-center gap-2 outline-none">
+      <Popover.Button
+        className="flex flex-wrap items-center gap-2 outline-none"
+        ref={buttonRef}
+      >
         {title}
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -42,6 +49,7 @@ const Dropdown = ({ title, subtitles }: DropdownProps) => {
               to={to}
               key={key}
               target={external ? "_blank" : ""}
+              onClick={() => buttonRef.current?.click()}
             >
               {title}
             </NavLink>

@@ -19,29 +19,56 @@ const ScoutTroops = () => {
           <p className="text-xl flex flex-wrap leading-relaxed text-white">
             {body}
           </p>
-          <Masonry columns={3}>
-            <img
-              // srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
-              src={scout1}
-              alt={"stuff"}
-              loading="lazy"
-              className="block w-full rounded-lg"
-            />
-            <img
-              // srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
-              src={scout2}
-              alt={"stuff"}
-              loading="lazy"
-              className="block w-full rounded-lg"
-            />
-            <img
-              // srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
-              src={scout3}
-              alt={"stuff"}
-              loading="lazy"
-              className="block w-full rounded-lg"
-            />
-          </Masonry>
+          <div className="lg:block hidden">
+            <Masonry columns={3}>
+              <img
+                // srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
+                src={scout1}
+                alt={"stuff"}
+                loading="lazy"
+                className="block w-full rounded-lg"
+              />
+              <img
+                // srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
+                src={scout2}
+                alt={"stuff"}
+                loading="lazy"
+                className="block w-full rounded-lg"
+              />
+              <img
+                // srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
+                src={scout3}
+                alt={"stuff"}
+                loading="lazy"
+                className="block w-full rounded-lg"
+              />
+            </Masonry>
+          </div>
+          <div className="lg:hidden block">
+            <Masonry columns={1}>
+              <img
+                // srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
+                src={scout1}
+                alt={"stuff"}
+                loading="lazy"
+                className="block w-full rounded-lg"
+              />
+              <img
+                // srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
+                src={scout2}
+                alt={"stuff"}
+                loading="lazy"
+                className="block w-full rounded-lg"
+              />
+              <img
+                // srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
+                src={scout3}
+                alt={"stuff"}
+                loading="lazy"
+                className="block w-full rounded-lg"
+              />
+            </Masonry>
+          </div>
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@ interface BlobTextProps {
   description: string;
   gradientL: string;
   gradientR: string;
-  invert?: boolean;
+  styleId: number;
 }
 
 const w = 300;
@@ -18,7 +18,7 @@ const BlobText = ({
   description,
   gradientL,
   gradientR,
-  invert,
+  styleId,
 }: BlobTextProps) => {
   const id = useId();
   return (
@@ -26,7 +26,7 @@ const BlobText = ({
       width={w}
       height={h}
       xmlns="http://www.w3.org/2000/svg"
-      className={invert ? "blob-inverted m-auto" : "blob m-auto"}
+      className={`blob-${styleId} m-auto`}
     >
       <defs>
         <linearGradient id={id} x1="0%" y1="0%" x2="0%" y2="100%">

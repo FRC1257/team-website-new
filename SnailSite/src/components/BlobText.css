@@ -1,24 +1,34 @@
 /* https://youtu.be/4ALLynsZ0u0 */
 /* https://9elements.github.io/fancy-border-radius/#74.34.56.36--500.500 */
 
-.blob {
+.blob-1 {
   border-radius: 44% 56% 72% 28% / 35% 62% 38% 65%;
   transition: border-radius 500ms ease-in-out;
   box-shadow: 0 0 300px 5px #ae3bec;
 }
 
-.blob:hover {
+.blob-1:hover {
   border-radius: 34% 66% 64% 36% / 74% 56% 44% 26%;
 }
 
-.blob-inverted {
-  border-radius: 34% 66% 64% 36% / 74% 56% 44% 26%;
+.blob-2 {
+  border-radius: 61% 39% 81% 19% / 45% 59% 41% 55%;
   transition: border-radius 500ms ease-in-out;
   box-shadow: 0 0 300px 5px #ae3bec;
 }
 
-.blob-inverted:hover {
-  border-radius: 44% 56% 72% 28% / 35% 62% 38% 65%;
+.blob-2:hover {
+  border-radius: 69% 31% 81% 19% / 34% 72% 28% 66%;
+}
+
+.blob-3 {
+  border-radius: 58% 42% 53% 47% / 34% 72% 28% 66%;
+  transition: border-radius 500ms ease-in-out;
+  box-shadow: 0 0 300px 5px #ae3bec;
+}
+
+.blob-3:hover {
+  border-radius: 77% 23% 74% 26% / 34% 72% 28% 66%;
 }
 
 .blob-green {
