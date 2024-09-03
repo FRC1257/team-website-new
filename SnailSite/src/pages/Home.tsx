@@ -85,19 +85,21 @@ const Home = () => {
                 description="Founded"
                 gradientL="#8c43fa"
                 gradientR="#c92eeb"
+                styleId={1}
               />
               <BlobText
                 statistic="20+"
                 description="Awards"
                 gradientL="#8c43fa"
                 gradientR="#c92eeb"
-                invert
+                styleId={2}
               />
               <BlobText
                 statistic="100+"
                 description="Members"
                 gradientL="#8c43fa"
                 gradientR="#c92eeb"
+                styleId={3}
               />
             </div>
             <div className="flex flex-col items-center">
