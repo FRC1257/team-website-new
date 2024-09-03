@@ -16,9 +16,9 @@ const LocalOutreach = () => {
           Local Initiatives
         </h1>
       </div>
-      <div className="lg:p-24 p-12 bg-background">
+      <div className="lg:p-24 bg-background">
         <div className="lg:p-24 p-12 bg-background">
-          <div className="flex flex-row">
+          <div className="flex lg:flex-row flex-col">
             <Card
               title="HydroCar"
               imgSrc={hydrologo}

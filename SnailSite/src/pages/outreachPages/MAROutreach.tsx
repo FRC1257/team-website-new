@@ -13,8 +13,8 @@ const MAROutreach = () => {
         </h1>
       </div>
       <div className="lg:p-24 p-12 bg-background">
-        <div className="lg:p-24 p-12 bg-background">
-          <div className="flex flex-row">
+        <div className="lg:p-24 bg-background">
+          <div className="flex lg:flex-row flex-col">
             <Card
               title="Robocon"
               imgSrc={roboconlogo}

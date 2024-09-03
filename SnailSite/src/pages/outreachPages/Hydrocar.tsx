@@ -54,18 +54,34 @@ const Hydrocar = () => {
           <p className="text-lg flex flex-wrap leading-relaxed text-white">
             {body2}
           </p>
-          <Masonry columns={5}>
-            {imgs.map((img, index) => (
-              <div key={index}>
-                <img
-                  src={`${img}`}
-                  alt={`${index}`}
-                  loading="lazy"
-                  className="block w-full rounded-lg"
-                />
-              </div>
-            ))}
-          </Masonry>
+          <div className="lg:block hidden">
+            <Masonry columns={5}>
+              {imgs.map((img, index) => (
+                <div key={index}>
+                  <img
+                    src={`${img}`}
+                    alt={`${index}`}
+                    loading="lazy"
+                    className="block w-full rounded-lg"
+                  />
+                </div>
+              ))}
+            </Masonry>
+          </div>
+          <div className="lg:hidden block">
+            <Masonry columns={1}>
+              {imgs.map((img, index) => (
+                <div key={index}>
+                  <img
+                    src={`${img}`}
+                    alt={`${index}`}
+                    loading="lazy"
+                    className="block w-full rounded-lg"
+                  />
+                </div>
+              ))}
+            </Masonry>
+          </div>
         </div>
       </div>
     </div>
