@@ -66,7 +66,7 @@ const Home = () => {
     <div>
       <EmblaCarousel slides={SLIDES} />
       <div className="bg-emerald-950">
-        <div className="p-24 top-div bg-background">
+        <div className="lg:p-24 p-12 top-div bg-background">
           <div>
             <div className="flex flex-col gap-2 text-white max-w-[72rem] mx-auto lg:mb-24 mb-6">
               <h1 className="text-center lg:text-5xl text-3xl font-bold">
@@ -109,7 +109,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="bottom-div top-invert bg-white p-36">
+        <div className="bottom-div top-invert bg-white lg:p-36 p-20">
           <div className="lg:grid lg:grid-cols-2 flex flex-col gap-4 lg:gap-10 text-black items-center lg:max-w-[72rem] m-auto">
             <p className="lg:text-xl text-md">
               FIRST is an international, not-for-profit organization that was
@@ -129,7 +129,7 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className="bottom-invert top-arrow p-24 bg-background">
+        <div className="bottom-invert top-arrow lg:p-24 p-12 bg-background">
           <div>
             <div className="flex flex-col gap-2 text-white max-w-[72rem] mx-auto mb-12">
               <h1 className="text-center lg:text-5xl text-3xl font-bold">
@@ -137,7 +137,7 @@ const Home = () => {
               </h1>
               <p className="text-center lg:text-2xl text-lg leading-tight">
                 Parallel Universe is deeply committed to STEM outreach and
-                education. Team 1257 is a proud co-host of RVSTS, and its
+                education. Team 1257 is a proud co-host of Robocon, and its
                 members often volunteer at FLL events.
               </p>
             </div>

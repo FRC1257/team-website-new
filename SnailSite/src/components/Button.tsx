@@ -10,7 +10,7 @@ const Button = ({ text, style, to }: ButtonProps) => {
   return (
     <Link to={to}>
       <button
-        className={`${style} rounded-xl py-[2dvh] px-[2dvw] font-bold text-[2dvh]`}
+        className={`${style} rounded-xl lg:py-[2dvh] lg:px-[2dvw] p-3 font-bold text-[2dvh]`}
       >
         {text}
       </button>

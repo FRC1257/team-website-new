@@ -60,14 +60,14 @@ const Navbar = () => {
       <div className="flex lg:justify-center lg:mt-4">
         <div className="bg-black rounded-full">
           <img
-            className="lg:w-32 lg:h-32 w-16 h-16"
+            className="lg:w-32 lg:h-32 w-10 h-10"
             src="pics/logos/biggerWhite.png"
             alt="Team Logo"
           />
         </div>
       </div>
       <Link
-        className="lg:text-center text-left text-white lg:text-[3dvw] text-3xl font-bold tracking-wide lg:mt-2 m-2"
+        className="lg:text-center text-left text-white lg:text-[3dvw] text-xl font-bold tracking-wide lg:mt-2 m-2"
         to=""
       >
         Parallel Universe
