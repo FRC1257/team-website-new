@@ -115,10 +115,10 @@ const Navbar = () => {
               className="block md:hidden border border-gray-600 p-2 rounded text-gray-600"
             >
               <div className={`${openNav ? "hidden" : "block"}`}>
-                <Menu size={24} />
+                <Menu size={24} color="white" />
               </div>
               <div className={`${openNav ? "block" : "hidden"}`}>
-                <Cross size={24} />
+                <Cross size={24} color="white" />
               </div>
             </button>
           </div>

@@ -20,12 +20,9 @@ const DropdownMobile = ({
 
   return (
     <div className="container mx-auto">
-      <div className="flex items-center">
+      <div className="flex items-center" onClick={() => setOpenNav(!openNav)}>
         <p>{title}</p>
-        <button
-          onClick={() => setOpenNav(!openNav)}
-          className="block md:hidden border-black p-2 rounded text-black"
-        >
+        <button className="block md:hidden border-black p-2 rounded text-black">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
