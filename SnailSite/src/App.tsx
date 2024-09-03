@@ -25,10 +25,11 @@ import Support from "./pages/Support";
 import Sponsors from "./pages/Sponsors";
 import Gallery from "./pages/Gallery";
 import OutreachRouter from "./pages/OutreachRouter";
+import Navbar2 from "./components/Navbar2";
 
 const Layout = () => (
   <>
-    <Navbar />
+    <Navbar2 />
     <Outlet />
     <Footer />
   </>

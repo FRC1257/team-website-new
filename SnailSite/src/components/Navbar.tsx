@@ -1,7 +1,7 @@
 // TODO: have child Dropdown button to collapse navbar onClick
 // TOOD: add different dvh breakpoints for mobile nav
 
-import { useState } from "react";
+import { useRef } from "react";
 
 import Dropdown, { SubtitleItemArray } from "./Dropdown";
 import { Link } from "react-router-dom";
@@ -50,7 +50,7 @@ const resourcesItems: SubtitleItemArray = [
 ];
 
 const Navbar = () => {
-  const [open, setOpen] = useState<boolean>(false);
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
   return (
     <nav
@@ -74,8 +74,8 @@ const Navbar = () => {
       </Link>
       <div className="lg:hidden ml-auto text-white">
         <Popover>
-          <Popover.Button>
-            <Menu size={32} color="white" onClick={() => setOpen(!open)} />
+          <Popover.Button ref={buttonRef}>
+            <Menu size={32} color="white" />
           </Popover.Button>
           <Popover.Panel className="absolute w-full top-[20dvh] right-[0.25dvw] z-50">
             <div className="z-50 flex flex-col text-left text-white text-lg font-semibold tracking-tight bg-gray-900 rounded-lg">
