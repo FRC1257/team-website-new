@@ -8,14 +8,14 @@ export type LeaderProfilePropsList = LeaderProfileProps[];
 
 const LeaderProfile = ({ name, position, image }: LeaderProfileProps) => {
   return (
-    <div className="max-w-64 text-white text-center">
+    <div className="text-white text-center lg:mb-0 mb-5">
       <img
-        className="object-contain lg:h-64 lg:w-64 w-24 h-24 rounded-full justify-self-center mb-2"
+        className="object-contain lg:h-64 lg:w-64 w-32 h-32 rounded-full justify-self-center mb-2"
         src={image}
         alt={name}
       />
-      <h2 className="font-bold text-2xl">{name}</h2>
-      <p className="text-lg">{position}</p>
+      <h2 className="font-bold lg:text-2xl text-lg">{name}</h2>
+      <p className="lg:text-lg">{position}</p>
     </div>
   );
 };
