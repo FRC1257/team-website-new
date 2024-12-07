@@ -2,7 +2,7 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
-// import Leadership from "./pages/Leadership";
+import Leadership from "./pages/Leadership";
 import Donate from "./pages/Donate";
 import Footer from "./components/Footer";
 import "./App.css";
@@ -16,7 +16,6 @@ import Sponsors from "./pages/Sponsors";
 import Gallery from "./pages/Gallery";
 import OutreachRouter from "./pages/OutreachRouter";
 import Navbar from "./components/Navbar";
-import LeadershipNew from "./pages/LeadershipNew";
 
 const Layout = () => (
   <>
@@ -53,7 +52,7 @@ const router = createBrowserRouter([
       },
       {
         path: "leadership",
-        element: <LeadershipNew />,
+        element: <Leadership />,
       },
       {
         path: "donate",
