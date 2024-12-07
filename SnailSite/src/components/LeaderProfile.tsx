@@ -10,7 +10,7 @@ const LeaderProfile = ({ name, position, image }: LeaderProfileProps) => {
   return (
     <div className="text-white text-center lg:mb-0 mb-5">
       <img
-        className="object-contain lg:h-64 lg:w-64 w-32 h-32 rounded-full justify-self-center mb-2"
+        className="object-contain 2xl:h-64 2xl:w-64 w-32 h-32 rounded-full justify-self-center mb-2"
         src={image}
         alt={name}
       />

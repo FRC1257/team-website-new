@@ -22,7 +22,7 @@ for (let i = 0; i < 4; i++) {
 
 const LeadershipNew: React.FC = () => {
   return (
-    <div className="lg:p-24 p-12 bg-gradient-to-r from-teal-600 lg:from-20% to-purple-600">
+    <div className="lg:p-24 p-12 bg-black">
       <div className="mx-auto max-w-[96rem]">
         <h1 className="lg:text-4xl text-2xl text-white font-bold mx-auto text-center mb-8">
           Student Leadership
