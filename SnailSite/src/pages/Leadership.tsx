@@ -1,117 +1,46 @@
-// TODO: fix this spaghetti
-
-import React, { useEffect, useState } from "react";
-
-interface Leader {
-  name: string;
-  role: string;
-  school: string;
-  grade: string;
-  email: string;
-}
+import LeaderProfile from "../components/LeaderProfile";
+import leadership from "./leadershipProfiles";
+import teamphoto from "../../public/pics/photo2425.jpg";
+import "./leadership.css";
 
 const Leadership: React.FC = () => {
-  const [leadershipData, setLeadershipData] = useState<Leader[]>([]);
-  const [hoveredCard, setHoveredCard] = useState<string | null>(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("/leadership.json");
-        const data = await response.json();
-        setLeadershipData(data);
-      } catch (error) {
-        console.error("Error fetching leadership data:", error);
-      }
-    };
-
-    fetchData();
-  }, []);
-
-  const getColorClass = (role: string): string => {
-    // if (role.toLowerCase().includes('president')) {
-    //     return 'bg-gradient-to-b from-green-200 to-green-300';
-    // } else if (role.toLowerCase().includes('manager')) {
-    //     return 'bg-gradient-to-b from-green-200 to-green-300';
-    // } else if (role.toLowerCase().includes('liaison')) {
-    //     return 'bg-gradient-to-b from-green-200 to-green-300';
-    // } else if (role.toLowerCase().includes('director')) {
-    //     return 'bg-gradient-to-b from-purple-300 to-purple-500';
-    // } else {
-    //     return 'bg-gray-200'; // Default color if none of the conditions are met
-    // }
-    if (role) {
-      return "bg-gradient-to-b from-purple-300 to-purple-500";
-    }
-    return "bg-gradient-to-b from-purple-300 to-purple-500";
-  };
-
-  const handleCardClick = (email: string) => {
-    window.location.href = `mailto:${email}`;
-  };
-
   return (
-    <div className="text-center pr-10 pl-10 pt-3 pb-10 bg-background">
-      <h1 className="lg:text-5xl text-3xl font-bold mb-4 text-white">
-        Student Leadership
-      </h1>
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {leadershipData.map((leader) => (
-          <div
-            key={leader.name}
-            className={`p-4 border border-gray-300 rounded transition-transform transform ${
-              hoveredCard === leader.name ? "scale-105" : "scale-100"
-            } ${getColorClass(leader.role)}`}
-            onMouseEnter={() => setHoveredCard(leader.name)}
-            onMouseLeave={() => setHoveredCard(null)}
-            onClick={() => handleCardClick(leader.email)}
-            style={{ cursor: "pointer" }}
-          >
-            <strong>{leader.name}</strong>
-            <br />
-            <span className="text-sm text-gray-600">{leader.role}</span>
-            <br />
-            <span className="text-xs">
-              {leader.school}, Grade {leader.grade}
-            </span>
-          </div>
-        ))}
-      </div>
-
-      <h1 className="text-5xl font-bold mt-8 mb-4 text-white">Advisors</h1>
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        <div
-          key="Mrs. Cook"
-          className={`p-4 border border-gray-300 rounded transition-transform transform ${
-            hoveredCard === "Mrs. Cook" ? "scale-105" : "scale-100"
-          } ${getColorClass("Advisor")}`}
-          onMouseEnter={() => setHoveredCard("Mrs. Cook")}
-          onMouseLeave={() => setHoveredCard(null)}
-          onClick={() => handleCardClick("mcook@ucvts.org")}
-          style={{ cursor: "pointer" }}
-        >
-          <strong>Mrs. Cook</strong>
-          <br />
-          <span className="text-sm text-gray-600">Advisor</span>
-          <br />
-          <span className="text-xs">Magnet</span>
+    <div className="lg:p-24 p-12 bg-black">
+      <div className="mx-auto max-w-[96rem]">
+        <h1 className="lg:text-4xl text-2xl text-white font-bold mx-auto text-center mb-8">
+          Student Leadership
+        </h1>
+        <div className="grid-layout mb-12">
+          {leadership.map((leader) => (
+            <LeaderProfile
+              name={leader.name}
+              position={leader.position}
+              schoolgrade={leader.schoolgrade}
+              image={leader.image}
+              fontsize={leader.fontsize}
+              key={leader.name}
+            />
+          ))}
         </div>
-        <div
-          key="Mr. Tollin"
-          className={`p-4 border border-gray-300 rounded transition-transform transform ${
-            hoveredCard === "Mr. Tollin" ? "scale-105" : "scale-100"
-          } ${getColorClass("Advisor")}`}
-          onMouseEnter={() => setHoveredCard("Mr. Tollin")}
-          onMouseLeave={() => setHoveredCard(null)}
-          onClick={() => handleCardClick("mtollin@ucvts.org")}
-          style={{ cursor: "pointer" }}
-        >
-          <strong>Mr. Tollin</strong>
-          <br />
-          <span className="text-sm text-gray-600">Advisor</span>
-          <br />
-          <span className="text-xs">Magnet</span>
+        <h1 className="lg:text-4xl text-2xl text-white font-bold mx-auto text-center mb-8">
+          Advisors
+        </h1>
+        <div className="flex flex-row justify-center lg:gap-14 gap-6 lg:mb-8 max-w-[48rem] mx-auto">
+          <LeaderProfile
+            name={"Michele Cook"}
+            image={"https://placehold.co/600x600"}
+            schoolgrade={"Teacher of Social Studies, MHS"}
+          />
+          <LeaderProfile
+            name={"Michael Tollin"}
+            image={"https://placehold.co/600x600"}
+            schoolgrade={"Teacher of Technology, MHS"}
+          />
         </div>
+        <h1 className="lg:text-4xl text-2xl text-white font-bold mx-auto text-center mt-8 mb-8">
+          2024-2025 Team Photo
+        </h1>
+        <img src={teamphoto} alt={"team"} className="rounded-lg" />
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import { Map } from "@emotion-icons/boxicons-regular/Map";
 import { School } from "@emotion-icons/ionicons-outline/School";
 import { Telephone } from "@emotion-icons/bootstrap/Telephone";
 import { EmailOutline } from "@emotion-icons/evaicons-outline/EmailOutline";
+import { FacebookCircle } from "@emotion-icons/boxicons-logos/FacebookCircle";
 import { Instagram } from "@emotion-icons/boxicons-logos/Instagram";
 import { Youtube } from "@emotion-icons/boxicons-logos/Youtube";
 import { Github } from "@emotion-icons/boxicons-logos/Github";
@@ -41,6 +42,11 @@ const Footer = () => {
           </div>
           <div className="flex flex-row items-center mt-2 gap-2">
             <div className="rounded-full bg-black p-1">
+              <Link to="https://www.facebook.com/FRC1257/" target="blank">
+                <FacebookCircle size={32} />
+              </Link>
+            </div>
+            <div className="rounded-full bg-black p-1">
               <Link to="https://www.instagram.com/frc1257/" target="blank">
                 <Instagram size={32} />
               </Link>
@@ -63,6 +69,11 @@ const Footer = () => {
       </div>
       <div className="flex flex-col mx-auto lg:hidden">
         <div className="flex flex-row items-center justify-center mx-auto gap-2 mb-2">
+          <div className="rounded-full bg-black p-2">
+            <Link to="https://www.facebook.com/FRC1257/" target="blank">
+              <FacebookCircle size={36} />
+            </Link>
+          </div>
           <div className="rounded-full bg-black p-2">
             <Link to="https://www.instagram.com/frc1257/" target="blank">
               <Instagram size={36} />

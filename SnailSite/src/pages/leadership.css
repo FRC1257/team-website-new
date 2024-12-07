@@ -1,0 +1,7 @@
+/* https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/ */
+.grid-layout {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 5rem;
+}
