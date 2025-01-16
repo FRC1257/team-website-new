@@ -1,4 +1,4 @@
-import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, Outlet, RouterProvider, useLocation } from "react-router-dom";
 
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
@@ -16,13 +16,22 @@ import Sponsors from "./pages/Sponsors";
 import Gallery from "./pages/Gallery";
 import OutreachRouter from "./pages/OutreachRouter";
 import Navbar from "./components/Navbar";
+import { useLayoutEffect, PropsWithChildren } from "react";
+
+const Scroller = ({ children }: PropsWithChildren) => {
+  const location = useLocation();
+  useLayoutEffect(() => {
+    document.documentElement.scrollTo(0, 0);
+  }, [location.pathname]);
+  return children
+}
 
 const Layout = () => (
-  <>
+  <Scroller>
     <Navbar />
     <Outlet />
     <Footer />
-  </>
+  </Scroller>
 );
 
 const router = createBrowserRouter([
