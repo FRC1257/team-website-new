@@ -17,9 +17,9 @@ const Support = () => {
         <p className="text-center lg:text-2xl text-lg leading-tight mb-8">
           Email: mcook@ucvts.org
         </p>
-        <div className="flex flex-col items-center lg:flex-row font-bold lg:text-2xl text-lg text-white lg:mx-auto gap-2 lg:gap-10">
+        <div className="flex flex-col items-center font-bold lg:text-2xl text-lg text-white lg:mx-auto gap-2 lg:gap-10">
           <Link
-            to="https://docs.google.com/document/d/1ZoW9DAPcqLLtVPsWB_YV7cHA_4WZDqq0P9M5zRdxW9U/edit?usp=sharing"
+            to="https://docs.google.com/document/d/1TsAGwOtRD76z_-uQH_UcoNDbNiP2s_7P/edit?usp=sharing&ouid=117484221340951774614&rtpof=true&sd=true"
             target="blank"
           >
             <button className="bg-primary-800 rounded-lg lg:p-10 p-4">
@@ -27,13 +27,31 @@ const Support = () => {
             </button>
           </Link>
           <Link
+            to="https://drive.google.com/file/d/1r7rse6o-xXSb9cdbpSf-2maNjqyqaHiK/view?usp=sharing"
+            target="blank"
+          >
+            <button className="bg-primary-800 rounded-lg lg:p-10 p-4">
+              Sponsor Brochure
+            </button>
+          </Link>
+          <Link
+            to="https://drive.google.com/file/d/17VcRZEjZGpujr7g90xXVzezqJ1yppoZw/view?usp=sharing"
+            target="blank"
+          >
+            <button className="bg-primary-800 rounded-lg lg:p-10 p-4">
+              Sponsor One Sheet
+            </button>
+          </Link>
+
+          <Link
             to="https://drive.google.com/file/d/18ViTUTPsm2MiOwQ9IdrO4Cqj06d0TKek/view?usp=sharing"
             target="blank"
           >
             <button className="bg-primary-800 rounded-lg lg:p-10 p-4">
-              Mentor Procedure
+              Mentor Sign Up
             </button>
           </Link>
+
         </div>
       </div>
     </div>
