@@ -1,36 +1,38 @@
-.table thead th {
-  text-align: center;
+.container {
+  display: grid;
+  grid-template-columns: 1fr 20fr 20fr;
+  justify-items: center;
+  grid-gap: 1rem;
+  overflow: hidden;
+  --gap: 1rem;
+  --line-offset: calc(var(--gap) / 2);
+  --header-line-thickness: 2px;
+  --line-thickness: 1px;
+  --line-color: white;
 }
 
-td {
-  vertical-align: top;
-}
-
-th,
-td {
-  padding: 2dvw;
-}
-
-#awards > .awards-section p {
-  text-align: center;
-}
-
-#awards a:hover {
-  color: white;
-}
-
-.awards-title {
-  margin-top: 1.5em;
-}
-
-#about {
-  text-align: center;
-}
-
-#about .row {
+.grid-item, .grid-item-header {
   position: relative;
 }
 
-table {
-  width: 70dvw;
+.grid-item::before, 
+.grid-item::after, .grid-item-header::after {
+  content: '';
+  position: absolute;
+  background-color: var(--line-color);
+  z-index: 1;
+}
+
+.grid-item::after {
+  inline-size: 100vw;
+  block-size: var(--line-thickness);
+  inset-inline-start: -10rem;
+  inset-block-start: calc(var(--line-offset) * -1);
+}
+
+.grid-item-header::after {
+  inline-size: 100vw;
+  block-size: var(--header-line-thickness);
+  inset-inline-start: -10rem;
+  inset-block-start: calc(var(--line-offset) * -1);
 }
