@@ -91,7 +91,7 @@ const Navbar = () => {
         className="lg:hidden bg-cover bg-center"
         style={{ backgroundImage: `url(${galaxy})` }}
       >
-        <div className="container mx-auto py-4 px-4 lg:flex lg:items-center lg:justify-between">
+        <div className="mx-auto py-4 px-4 lg:flex lg:items-center lg:justify-between">
           <div className="flex items-center justify-between">
             <div className="flex flex-row items-center">
               <div className="flex lg:justify-center lg:mt-4">
