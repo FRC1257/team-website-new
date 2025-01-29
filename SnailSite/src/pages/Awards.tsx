@@ -5,16 +5,11 @@ const Awards = () => {
   return (
     <div className="lg:p-24 p-4 bg-background">
       <div className="flex mx-auto">
-        <ul className="banners font-bold mx-auto">
+        <ul className="banners font-bold mx-auto lg:block hidden">
           <li>
             <img src="pics/frc/FIRST_just_logo.png" className="mx-auto" alt="FMA Montgomery" />2024
             <p>Mid-Atlantic Robotics Seneca</p>
             <p>Winner</p>
-          </li>
-          <li>
-            <img src="pics/frc/FIRST_just_logo.png" className="mx-auto" alt="FMA Montgomery" />2023
-            <p>Mid-Atlantic Robotics Montgomery</p>
-            <p>Finalist</p>
           </li>
           <li>
             <img src="pics/frc/FIRST_just_logo.png" className="mx-auto" alt="FMA Mount Olive" />2016
