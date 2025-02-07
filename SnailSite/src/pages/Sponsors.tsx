@@ -1,5 +1,4 @@
 import friends from "./sponsorFriendTier";
-import "./Sponsors.css"
 
 const Sponsors = () => {
   return (
