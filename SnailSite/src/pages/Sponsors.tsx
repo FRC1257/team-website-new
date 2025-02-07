@@ -21,7 +21,7 @@ const Sponsors = () => {
       <h1 className="text-white text-3xl font-bold text-center mb-2">Friends</h1>
       <hr />
       <div className="mt-2 mx-auto max-w-[72rem]">
-        <ul className="flex flex-col max-h-[30rem] flex-wrap gap-2">
+        <ul className="flex flex-col lg:max-h-[30rem] lg:flex-wrap gap-2">
           {friends.map((friend) => (
             <li className="text-white text-center" key={friend}>{friend}</li>
           ))}
