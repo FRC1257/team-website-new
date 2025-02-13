@@ -1,5 +1,16 @@
 import { LeaderProfilePropsList } from "../components/LeaderProfile";
 
+import claire from "../assets/leadershipImages/claire.jpg";
+import jimit from "../assets/leadershipImages/jimit.jpg";
+import joseph from "../assets/leadershipImages/joseph.jpg";
+import kamila from "../assets/leadershipImages/kamila.jpg";
+import karen from "../assets/leadershipImages/karen.jpg";
+import maia from "../assets/leadershipImages/maia.jpg";
+import mikaela from "../assets/leadershipImages/mikaela.jpg";
+import mimi from "../assets/leadershipImages/mimi.jpg";
+import reva from "../assets/leadershipImages/reva.jpg";
+import santiago from "../assets/leadershipImages/santiago.jpg";
+
 const leadership: LeaderProfilePropsList = [
   {
     name: "Christopher Cao",
@@ -17,14 +28,14 @@ const leadership: LeaderProfilePropsList = [
     name: "Kamila Castro-Dworzynska",
     position: "Technical Director",
     schoolgrade: "MHS '25",
-    image: "https://placehold.co/600x600",
+    image: kamila,
     fontsize: "lg:text-xl text-md",
   },
   {
     name: "Karen Saavedra",
     position: "Operations Director",
     schoolgrade: "MHS '25",
-    image: "https://placehold.co/600x600",
+    image: karen,
   },
   {
     name: "Gali Avni",
@@ -54,13 +65,13 @@ const leadership: LeaderProfilePropsList = [
     name: "Jimit Meria",
     position: "Build Manager",
     schoolgrade: "MHS '25",
-    image: "https://placehold.co/600x600",
+    image: jimit,
   },
   {
     name: "Michelle Chay",
     position: "Electronics Manager",
     schoolgrade: "MHS '25",
-    image: "https://placehold.co/600x600",
+    image: mimi,
   },
   {
     name: "Antonios Theocharopoulus",
@@ -85,37 +96,37 @@ const leadership: LeaderProfilePropsList = [
     name: "Reva Venkatraghvan",
     position: "Technical Doc Manager",
     schoolgrade: "MHS '25",
-    image: "https://placehold.co/600x600",
+    image: reva,
   },
   {
     name: "Mikaela Catuncan",
     position: "Outreach Doc Manager",
     schoolgrade: "MHS '25",
-    image: "https://placehold.co/600x600",
+    image: mikaela,
   },
   {
     name: "Joseph Candelaria",
     position: "Scouting Manager",
     schoolgrade: "MHS '25",
-    image: "https://placehold.co/600x600",
+    image: joseph,
   },
   {
     name: "Santiago Gonzalez",
     position: "Outreach Manager",
     schoolgrade: "MHS '25",
-    image: "https://placehold.co/600x600",
+    image: santiago,
   },
   {
     name: "Maia Gonzalez",
     position: "Marketing Manager",
     schoolgrade: "MHS '25",
-    image: "https://placehold.co/600x600",
+    image: maia,
   },
   {
     name: "Claire Qin",
     position: "Accounting Manager",
     schoolgrade: "MHS '25",
-    image: "https://placehold.co/600x600",
+    image: claire,
   },
 ];
 

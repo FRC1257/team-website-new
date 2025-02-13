@@ -8,6 +8,8 @@ interface LeaderProfileProps {
 
 export type LeaderProfilePropsList = LeaderProfileProps[];
 
+import "./LeaderProfile.css";
+
 const LeaderProfile = ({
   name,
   position,
@@ -21,11 +23,11 @@ const LeaderProfile = ({
 
   return (
     <div className="text-white text-center">
-      <img
-        className="object-contain rounded-full justify-self-center mb-4"
-        src={image}
-        alt={name}
-      />
+        <img
+          className="justify-self-center mb-4 circlecrop"
+          src={image}
+          alt={name}
+        />
       <h2 className={`font-bold ${size} mb-2`}>{name}</h2>
       <p className="lg:text-xl">{position}</p>
       <p>{schoolgrade}</p>
