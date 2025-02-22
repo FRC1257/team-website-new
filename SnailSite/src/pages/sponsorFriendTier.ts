@@ -55,7 +55,12 @@ const friends = [
   "Sulinski Family",
   "Simply Gorgeous Salon and Spa",
   "Besson Orthodontics",
-  "Alluem Yoga"
+  "Alluem Yoga",
+  "The Blowout Lab",
+  "Deaza-Camacho Family",
+  "So Delicious Ice Cream",
+  "Ajmal Family",
+  "Ghate Family"
 ].sort((a, b) => a.localeCompare(b))
 
 export default friends
