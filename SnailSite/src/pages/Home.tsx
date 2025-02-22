@@ -87,13 +87,13 @@ const Home = () => {
               </h1>
               <p className="text-center lg:text-2xl text-lg leading-tight">
                 Parallel Universe is deeply committed to STEM outreach and
-                education. Team 1257 is a proud co-host of Robocon, and its
+                education. Team 1257 is a proud co-host of RoboCon, and its
                 members often volunteer at FLL events.
               </p>
             </div>
             <div className="flex flex-col items-center">
               <iframe
-                src="https://www.youtube.com/embed/3crFpGlAGOU?si=SC3A5RL_Z2zJeFIT"
+                src="https://www.youtube.com/embed/JqudK2eV4EE"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
