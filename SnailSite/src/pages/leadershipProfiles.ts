@@ -10,6 +10,7 @@ import mikaela from "../assets/leadershipImages/mikaela.jpg";
 import mimi from "../assets/leadershipImages/mimi.jpg";
 import reva from "../assets/leadershipImages/reva.jpg";
 import santiago from "../assets/leadershipImages/santiago.jpg";
+import douglas from "../assets/leadershipImages/douglas.jpg"
 
 const leadership: LeaderProfilePropsList = [
   {
@@ -22,7 +23,7 @@ const leadership: LeaderProfilePropsList = [
     name: "Douglas Gee",
     position: "Vice President",
     schoolgrade: "MHS '26",
-    image: "https://placehold.co/600x600",
+    image: douglas,
   },
   {
     name: "Kamila Castro-Dworzynska",
@@ -68,6 +69,12 @@ const leadership: LeaderProfilePropsList = [
     image: jimit,
   },
   {
+    name: "Madelyn Lee",
+    position: "Design Manager",
+    schoolgrade: "AIT '25",
+    image: "https://placehold.co/600x600",
+  },
+  {
     name: "Michelle Chay",
     position: "Electronics Manager",
     schoolgrade: "MHS '25",
@@ -84,12 +91,6 @@ const leadership: LeaderProfilePropsList = [
     name: "Bowen Zhang",
     position: "Programming Co-Manager",
     schoolgrade: "MHS '27",
-    image: "https://placehold.co/600x600",
-  },
-  {
-    name: "Madelyn Lee",
-    position: "Design Manager",
-    schoolgrade: "AIT '25",
     image: "https://placehold.co/600x600",
   },
   {
