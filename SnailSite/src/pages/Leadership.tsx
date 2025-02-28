@@ -3,6 +3,9 @@ import leadership from "./leadershipProfiles";
 import teamphoto from "../../public/pics/photo2425.jpg";
 import "./leadership.css";
 
+import cook from "../assets/leadershipImages/cook.jpg";
+import tollin from "../assets/leadershipImages/tollin.jpg";
+
 const Leadership: React.FC = () => {
   return (
     <div className="lg:p-24 p-12 bg-black">
@@ -28,12 +31,12 @@ const Leadership: React.FC = () => {
         <div className="flex flex-row justify-center lg:gap-14 gap-6 lg:mb-8 max-w-[48rem] mx-auto">
           <LeaderProfile
             name={"Michele Cook"}
-            image={"https://placehold.co/600x600"}
+            image={cook}
             schoolgrade={"Teacher of Social Studies, MHS"}
           />
           <LeaderProfile
             name={"Michael Tollin"}
-            image={"https://placehold.co/600x600"}
+            image={tollin}
             schoolgrade={"Teacher of Technology, MHS"}
           />
         </div>
