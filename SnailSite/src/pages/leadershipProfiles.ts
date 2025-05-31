@@ -1,51 +1,57 @@
 import { LeaderProfilePropsList } from "../components/LeaderProfile";
 
-import claire from "../assets/leadershipImages/claire.jpg";
-import jimit from "../assets/leadershipImages/jimit.jpg";
-import joseph from "../assets/leadershipImages/joseph.jpg";
-import kamila from "../assets/leadershipImages/kamila.jpg";
-import karen from "../assets/leadershipImages/karen.jpg";
-import maia from "../assets/leadershipImages/maia.jpg";
-import mikaela from "../assets/leadershipImages/mikaela.jpg";
-import mimi from "../assets/leadershipImages/mimi.jpg";
-import reva from "../assets/leadershipImages/reva.jpg";
-import santiago from "../assets/leadershipImages/santiago.jpg";
 import douglas from "../assets/leadershipImages/douglas.jpg"
 import bowen from "../assets/leadershipImages/bowen.jpg";
 import michael from "../assets/leadershipImages/michael.jpg";
-import madelyn from "../assets/leadershipImages/madelyn.jpg";
 import sonia from "../assets/leadershipImages/sonia.jpg";
 
 const leadership: LeaderProfilePropsList = [
   {
-    name: "Christopher Cao",
-    position: "President",
-    schoolgrade: "MHS '25",
-    image: "https://placehold.co/600x600",
-  },
-  {
     name: "Douglas Gee",
-    position: "Vice President",
+    position: "President",
     schoolgrade: "MHS '26",
     image: douglas,
   },
   {
-    name: "Kamila Castro-Dworzynska",
+    name: "Leyla Akin",
+    position: "Vice President",
+    schoolgrade: "MHS '27",
+    image: "https://placehold.co/600x600",
+  },
+  {
+    name: "Michael Sisoev",
     position: "Technical Director",
-    schoolgrade: "MHS '25",
-    image: kamila,
-    fontsize: "lg:text-xl text-md",
+    schoolgrade: "MHS '26",
+    image: michael,
   },
   {
-    name: "Karen Saavedra",
-    position: "Operations Director",
-    schoolgrade: "MHS '25",
-    image: karen,
+    name: "Bowen Zhang",
+    position: "Technical Liaison",
+    schoolgrade: "MHS '27",
+    image: bowen,
   },
   {
-    name: "Gali Avni",
-    position: "Documentation Director",
-    schoolgrade: "MHS '25",
+    name: "Kevin Wright",
+    position: "Build Manager",
+    schoolgrade: "MHS '26",
+    image: "https://placehold.co/600x600",
+  },
+  {
+    name: "Sam Beilis",
+    position: "Programming Manager",
+    schoolgrade: "UCT '26",
+    image: "https://placehold.co/600x600",
+  },
+  {
+    name: "Raghav Manikandan",
+    position: "Programming Manager",
+    schoolgrade: "MHS '27",
+    image: "https://placehold.co/600x600",
+  },
+  {
+    name: "Tanisi Dudani",
+    position: "Electronics Manager",
+    schoolgrade: "MHS '26",
     image: "https://placehold.co/600x600",
   },
   {
@@ -55,83 +61,59 @@ const leadership: LeaderProfilePropsList = [
     image: sonia,
   },
   {
-    name: "Anthony Guan",
-    position: "Strategy Director",
-    schoolgrade: "MHS '25",
+    name: "Isaac Chen",
+    position: "Design Director",
+    schoolgrade: "MHS '26",
     image: "https://placehold.co/600x600",
   },
   {
-    name: "Michael Sisoev",
-    position: "Technical Liaison",
+    name: "Chole Lin",
+    position: "CAD Manager",
     schoolgrade: "MHS '26",
-    image: michael,
+    image: "https://placehold.co/600x600",
   },
   {
-    name: "Jimit Meria",
-    position: "Build Manager",
-    schoolgrade: "MHS '25",
-    image: jimit,
-  },
-  {
-    name: "Madelyn Lee",
-    position: "Design Manager",
-    schoolgrade: "AIT '25",
-    image: madelyn,
-  },
-  {
-    name: "Michelle Chay",
-    position: "Electronics Manager",
-    schoolgrade: "MHS '25",
-    image: mimi,
-  },
-  {
-    name: "Antonios Theocharopoulus",
-    position: "Programming Co-Manager",
-    schoolgrade: "AIT '25",
+    name: "Kingdavid Onyeukwu",
+    position: "Strategy Director",
+    schoolgrade: "MHS '26",
     image: "https://placehold.co/600x600",
     fontsize: "lg:text-xl text-md",
   },
   {
-    name: "Bowen Zhang",
-    position: "Programming Co-Manager",
-    schoolgrade: "MHS '27",
-    image: bowen,
-  },
-  {
-    name: "Reva Venkatraghvan",
-    position: "Technical Doc Manager",
-    schoolgrade: "MHS '25",
-    image: reva,
-  },
-  {
-    name: "Mikaela Catuncan",
-    position: "Outreach Doc Manager",
-    schoolgrade: "MHS '25",
-    image: mikaela,
-  },
-  {
-    name: "Joseph Candelaria",
+    name: "Anthony Dela Cruz",
     position: "Scouting Manager",
-    schoolgrade: "MHS '25",
-    image: joseph,
+    schoolgrade: "MHS '26",
+    image: "https://placehold.co/600x600",
   },
   {
-    name: "Santiago Gonzalez",
-    position: "Outreach Manager",
-    schoolgrade: "MHS '25",
-    image: santiago,
+    name: "Gianna Qiu",
+    position: "Business Director",
+    schoolgrade: "MHS '26",
+    image: "https://placehold.co/600x600",
   },
   {
-    name: "Maia Gonzalez",
+    name: "Maya Filian",
+    position: "Finance Manager",
+    schoolgrade: "MHS '26",
+    image: "https://placehold.co/600x600",
+  },
+  {
+    name: "Daniel Hely",
     position: "Marketing Manager",
-    schoolgrade: "MHS '25",
-    image: maia,
+    schoolgrade: "MHS '27",
+    image: "https://placehold.co/600x600",
   },
   {
-    name: "Claire Qin",
-    position: "Accounting Manager",
-    schoolgrade: "MHS '25",
-    image: claire,
+    name: "Ruhi Raut",
+    position: "Marketing Manager",
+    schoolgrade: "MHS '28",
+    image: "https://placehold.co/600x600",
+  },  
+  {
+    name: "Karina Ortiz",
+    position: "Awards Manager",
+    schoolgrade: "MHS '26",
+    image: "https://placehold.co/600x600",
   },
 ];
 
