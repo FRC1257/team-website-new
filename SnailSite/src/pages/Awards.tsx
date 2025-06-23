@@ -32,9 +32,9 @@ const Awards = () => {
         <div className="text-xl font-bold">Year</div>
         <div className="text-xl font-bold">Event</div>
         <div className="text-xl font-bold">Awards</div>
-        <div className="grid-item-header">2024</div>
-        <div className="grid-item-header">FMA Seneca Event 2024</div>
-        <div className="grid-item-header">Winner</div>
+        <div className="grid-item-header">2025</div>
+        <div className="grid-item-header">FMA Bensalem Event</div>
+        <div className="grid-item-header">Industrial Design Award sponsored by General Motors</div>
         {awards.map(({ year, comp, award }: AwardProps) =>
         (
           <>
