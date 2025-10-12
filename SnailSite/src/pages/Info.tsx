@@ -13,7 +13,7 @@ const Info = () => {
           Our team is based in Union County Magnet High School which has a 100%
           graduation rate, with approximately 80% of students majoring in
           engineering or computer science. Team 1257 is a focal point of
-          collaboration for Union County. Our team is composed of 100 members
+          collaboration for Union County. Our team is composed of 120 members
           from 5 high schools and 21 towns. Through our mandatory business and
           sponsorship program, we teach the soft skills that are necessary for
           global change-makers and emphasize the FIRST principle of building
