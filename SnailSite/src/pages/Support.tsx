@@ -19,7 +19,7 @@ const Support = () => {
         </p>
         <div className="flex flex-col items-center font-bold lg:text-2xl text-lg text-white lg:mx-auto gap-2 lg:gap-10">
           <Link
-            to="https://docs.google.com/document/d/1TsAGwOtRD76z_-uQH_UcoNDbNiP2s_7P/edit?usp=sharing&ouid=117484221340951774614&rtpof=true&sd=true"
+            to="https://docs.google.com/document/d/1d9qpT83CHorEg1BB1skM5DNsVdGjlw9u-Clcx_UbzZI/edit?tab=t.0"
             target="blank"
           >
             <button className="bg-primary-800 rounded-lg lg:p-10 p-4">
@@ -35,7 +35,7 @@ const Support = () => {
             </button>
           </Link>
           <Link
-            to="https://drive.google.com/file/d/17VcRZEjZGpujr7g90xXVzezqJ1yppoZw/view?usp=sharing"
+            to="https://drive.google.com/file/d/1b3qw8GBZthPLLEi2swafRyShRSiIw7a-/view"
             target="blank"
           >
             <button className="bg-primary-800 rounded-lg lg:p-10 p-4">
@@ -44,7 +44,7 @@ const Support = () => {
           </Link>
 
           <Link
-            to="https://drive.google.com/file/d/18ViTUTPsm2MiOwQ9IdrO4Cqj06d0TKek/view?usp=sharing"
+            to="https://docs.google.com/forms/d/e/1FAIpQLSf1iRnXWOPBUMNvygxMgIlggLk3mvQr0qs5gO1bR2NuWcOYfg/viewform?usp=header"
             target="blank"
           >
             <button className="bg-primary-800 rounded-lg lg:p-10 p-4">

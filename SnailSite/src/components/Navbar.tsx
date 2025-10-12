@@ -18,7 +18,7 @@ const aboutItems: SubtitleItemArray = [
 const parentsItems: SubtitleItemArray = [
   {
     title: "Wishlist",
-    to: "https://www.amazon.com/hz/wishlist/printview/10BWUEU7XC1E1?target=_blank&ref_=lv_pv&filter=unpurchased&sort=default",
+    to: "https://www.amazon.com/hz/wishlist/ls/3ENITCRLL1JX4?ref_=wl_share",
     key: "wishlist",
     external: true,
   },
@@ -39,7 +39,7 @@ const resourcesItems: SubtitleItemArray = [
   },
   {
     title: "Handbook",
-    to: "https://docs.google.com/document/d/19TPxdzMEWFnx3xjKsc1DgqhJ7yiGB8YVfXHIzYRunEU/edit?usp=sharing",
+    to: "https://docs.google.com/document/d/1bNfZ-mQn7xLyyG3Hzkk5VUUpTWnYA_o8_TXasC52Fcw/edit?tab=t.0",
     key: "book",
     external: true,
   },
