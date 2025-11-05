@@ -27,7 +27,7 @@ const Support = () => {
             </button>
           </Link>
           <Link
-            to="https://drive.google.com/file/d/1r7rse6o-xXSb9cdbpSf-2maNjqyqaHiK/view?usp=sharing"
+            to="https://drive.google.com/file/d/1uaqEjPx1B622bd4GhN9HC7X_sL-O26dh/view"
             target="blank"
           >
             <button className="bg-primary-800 rounded-lg lg:p-10 p-4">
