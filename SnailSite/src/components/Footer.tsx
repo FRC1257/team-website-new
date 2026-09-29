@@ -34,11 +34,11 @@ const Footer = () => {
           </div>
           <div className="flex flex-row items-center gap-2">
             <Telephone size={16} />
-            <p>908-889-8288 x255</p>
+            <p>908-889-8288 x204</p>
           </div>
           <div className="flex flex-row items-center gap-2">
             <EmailOutline size={16} />
-            <p>mcook@ucvts.org</p>
+            <p>mtollin@ucvts.org</p>
           </div>
           <div className="flex flex-row items-center mt-2 gap-2">
             <div className="rounded-full bg-black p-1">
@@ -103,11 +103,11 @@ const Footer = () => {
         </div>
         <div className="flex flex-row items-center gap-2 mx-auto">
           <Telephone size={16} />
-          <p>908-889-8288 x255</p>
+          <p>908-889-8288 x204</p>
         </div>
         <div className="flex flex-row items-center gap-2 mx-auto">
           <EmailOutline size={16} />
-          <p>mcook@ucvts.org</p>
+          <p>mtollin@ucvts.org</p>
         </div>
       </div>
     </div>

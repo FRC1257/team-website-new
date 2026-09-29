@@ -8,14 +8,14 @@ const Support = () => {
           CONTACT INFO
         </h1>
         <p className="text-center lg:text-2xl text-lg leading-tight mb-2">
-          Please address any inquiries on sponsorships or mentoring to Mrs.
-          Michele Cook.
+          Please address any inquiries on sponsorships or mentoring to Mr.
+          Michael Tollin.
         </p>
         <p className="text-center lg:text-2xl text-lg leading-tight mb-2">
-          Tel: 908-889-8288 x255
+          Tel: 908-889-8288 x204
         </p>
         <p className="text-center lg:text-2xl text-lg leading-tight mb-8">
-          Email: mcook@ucvts.org
+          Email: mtollin@ucvts.org
         </p>
         <div className="flex flex-col items-center font-bold lg:text-2xl text-lg text-white lg:mx-auto gap-2 lg:gap-10">
           <Link
