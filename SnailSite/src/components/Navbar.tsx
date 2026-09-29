@@ -33,7 +33,7 @@ const parentsItems: SubtitleItemArray = [
 const resourcesItems: SubtitleItemArray = [
   {
     title: "Documentation",
-    to: "https://docs.google.com/document/d/161gJzyOHGn3c9_r7zEpRzqucXN_SCO8SX5lyh6rMZy0/edit?usp=sharing",
+    to: "https://docs.google.com/document/d/1vYDTUWAHKgzJiwVuIXweG014E6iguVWrwnxvYnHS2i4/edit?tab=t.0",
     key: "docs",
     external: true,
   },

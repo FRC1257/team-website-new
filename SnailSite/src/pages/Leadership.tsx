@@ -3,7 +3,7 @@ import leadership from "./leadershipProfiles";
 import teamphoto from "../../public/pics/photo2425.jpg";
 import "./leadership.css";
 
-import cook from "../assets/leadershipImages/cook.jpg";
+import pastori from "../assets/leadershipImages/pastori.jpg";
 import tollin from "../assets/leadershipImages/tollin.jpg";
 
 const Leadership: React.FC = () => {
@@ -30,14 +30,14 @@ const Leadership: React.FC = () => {
         </h1>
         <div className="flex flex-row justify-center lg:gap-14 gap-6 lg:mb-8 max-w-[48rem] mx-auto">
           <LeaderProfile
-            name={"Michele Cook"}
-            image={cook}
+            name={"Michael Tollin"}
+            image={tollin}
             schoolgrade={"Teacher of Social Studies, MHS"}
           />
           <LeaderProfile
-            name={"Michael Tollin"}
-            image={tollin}
-            schoolgrade={"Teacher of Technology, MHS"}
+            name={"Shane Pastori"}
+            image={pastori}
+            schoolgrade={"Teacher of Statistics, AIT"}
           />
         </div>
         <h1 className="lg:text-4xl text-2xl text-white font-bold mx-auto text-center mt-8 mb-8">

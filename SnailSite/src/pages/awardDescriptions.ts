@@ -5,6 +5,7 @@ export interface AwardProps {
 export type AwardPropsList = AwardProps[];
 
 const awards = [
+  { year: 2026, comp: "FMA District Seneca Event", award: "Imagery Award in honor of Jack Kamen" },
   { year: 2025, comp: "FMA District Bensalem Event", award: "Industrial Design Award sponsored by General Motors" },
   { year: 2024, comp: "FMA Seneca Event 2024", award: "Winner" }, 
   { year: 2024, comp: "FMA Seneca Event 2024", award: "Engineering Inspiration Award" },
