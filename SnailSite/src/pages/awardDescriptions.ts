@@ -18,7 +18,7 @@ const awards = [
   { year: 2019, comp: "FMA District Bridgewater-Raritan Event 2019", award: "Gracious Professionalism Award sponsored by Johnson & Johnson" },
   { year: 2019, comp: "FMA District Mount Olive Event 2019", award: "Gracious Professionalism Award sponsored by Johnson & Johnson" },
   { year: 2018, comp: "MAR District Hatboro-Horsham Event", award: "Gracious Professionalism Award sponsored by Johnson & Johnson" },
-  { year: 2017, comp: "Brunswick Eruption 2017", award: "Winner" },
+  { year: 2017, comp: "Brunswick Eruption", award: "Winner" },
   { year: 2017, comp: "MAR District Bridgewater-Raritan Event", award: "Entrepreneurship Award sponsored by Kleiner Perkins Caufield and Byers" },
   { year: 2017, comp: "MAR District Hatboro-Horsham Event", award: "Excellence in Engineering Sponsored By Delphi" },
   { year: 2016, comp: "FRC World Championship - Archimedes", award: "Semifinalist" },
