@@ -5,12 +5,10 @@ import david from "../assets/leadershipImages/david.jpg";
 import bowen from "../assets/leadershipImages/bowen.jpg";
 import anushri from "../assets/leadershipImages/anushri.jpg";
 import raghav from "../assets/leadershipImages/raghav.jpg";
-import anjali from "../assets/leadershipImages/anjali.jpg";
 import ayah from "../assets/leadershipImages/ayah.jpg";
 import jase from "../assets/leadershipImages/jase.jpg";
 import seojun from "../assets/leadershipImages/seojun.jpg";
 import ruhi from "../assets/leadershipImages/ruhi.jpg";
-import anish from "../assets/leadershipImages/anish.jpg";
 import daniel from "../assets/leadershipImages/daniel.jpg";
 import angelina from "../assets/leadershipImages/angelina.jpg";
 
