@@ -1,0 +1,49 @@
+name: Deploy main to Vercel
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: vercel-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: SnailSite/package-lock.json
+      - name: Check deployment credentials
+        run: |
+          for secret in VERCEL_ORG_ID VERCEL_PROJECT_ID VERCEL_TOKEN; do
+            if [ -z "${!secret}" ]; then
+              echo "::error::Missing repository secret: $secret. See README.md."
+              exit 1
+            fi
+          done
+      - name: Install Vercel CLI
+        run: npm install --global vercel@62.2.0
+      - name: Pull production project settings
+        run: vercel pull --yes --environment=production --token="$VERCEL_TOKEN"
+      - name: Install application dependencies
+        working-directory: SnailSite
+        run: npm ci --no-audit --no-fund
+      - name: Build production site
+        run: vercel build --prod --token="$VERCEL_TOKEN"
+      - name: Deploy production site
+        run: vercel deploy --prebuilt --prod --token="$VERCEL_TOKEN"
