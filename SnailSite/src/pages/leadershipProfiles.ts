@@ -79,7 +79,7 @@ const leadership: LeaderProfilePropsList = [
     name: "Anish Iyer",
     position: "Outreach Manager",
     schoolgrade: "AIT '28",
-    image: "https://placehold.co/600x600",
+    image: anish,
   },
   {
     name: "Daniel Hely",

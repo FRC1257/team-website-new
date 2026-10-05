@@ -18,7 +18,7 @@ const aboutItems: SubtitleItemArray = [
 const parentsItems: SubtitleItemArray = [
   {
     title: "Wishlist",
-    to: "https://www.amazon.com/registries/gl/guest-view/2OJI4S91DBFKC?ref_=cm_sw_r_cp_ud_ggr-subnav-share_8HCAG06W7PY3FEZYX84Z",
+    to: "https://www.amazon.com/hz/wishlist/ls/7U9L6QH5FW5U?ref_=wl_share",
     key: "wishlist",
     external: true,
   },
