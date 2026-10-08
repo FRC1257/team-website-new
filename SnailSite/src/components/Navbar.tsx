@@ -80,6 +80,9 @@ const Navbar = () => {
         <NavLink to="/sponsors" onClick={() => toggleNav()}>
           Sponsors
         </NavLink>
+        <NavLink to="/newsletter" onClick={() => toggleNav()}>
+          Newsletter
+        </NavLink>
       </>
     );
   };
@@ -168,6 +171,9 @@ const Navbar = () => {
             </li>
             <li className="p-4">
               <Link to="/gallery">Gallery</Link>
+            </li>
+            <li className="p-4">
+              <Link to="/newsletter">Newsletter</Link>
             </li>
             <li className="p-4">
               <Link to="/sponsors">Sponsors</Link>
