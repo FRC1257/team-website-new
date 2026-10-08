@@ -1,3 +1,4 @@
+
 import "./Newsletter.css";
 
 import { useEffect, useState } from "react";
@@ -111,12 +112,17 @@ const Newsletter = () => {
               onClick={() => setSelectedIssue(null)}
               className="newsletter-back-link"
             >
-              ← Back to all newsletters
+              ← All editions
             </button>
+
+            <div className="newsletter-masthead-top">
+              <span>FRC Team 1257</span>
+              <span>The Snail Dispatch</span>
+            </div>
 
             <header className="newsletter-article-header">
               <p className="newsletter-date">
-                {formatDate(selectedIssue.publishedAt)}
+                Published {formatDate(selectedIssue.publishedAt)}
               </p>
 
               <h1 className="newsletter-article-title">
@@ -144,91 +150,131 @@ const Newsletter = () => {
                 components={portableTextComponents}
               />
             </div>
+
+            <div className="newsletter-masthead-rule" />
           </article>
         ) : (
           <>
             <header className="newsletter-header">
+              <div className="newsletter-masthead-top">
+                <span>FRC Team 1257</span>
+                <span>Robotics · Team News · Community</span>
+              </div>
+
               <p className="newsletter-eyebrow">
-                FRC Team 1257
+                The Official Team Publication
               </p>
 
               <h1 className="newsletter-heading">
-                Newsletter
+                Snail <span>Mail</span>
               </h1>
 
               <p className="newsletter-subtitle">
                 What's new with the Snails?
+                <br />
               </p>
+
+              <div className="newsletter-masthead-rule" />
             </header>
 
-            {loading ? (
-              <div className="newsletter-status">
-                Loading newsletters...
+            <section aria-label="Newsletter editions">
+              <div className="newsletter-section-heading">
+                <h2>Latest Editions</h2>
+                <p>
+                  {loading
+                    ? "Fetching the latest"
+                    : `${issues.length} ${
+                        issues.length === 1 ? "edition" : "editions"
+                      }`}
+                </p>
               </div>
-            ) : error ? (
-              <div
-                role="alert"
-                className="newsletter-status newsletter-error"
-              >
-                {error}
-              </div>
-            ) : issues.length === 0 ? (
-              <div className="newsletter-empty">
-                No newsletters published yet. Check back soon!
-              </div>
-            ) : (
-              <div className="newsletter-grid">
-                {issues.map((issue) => (
-                  <article
-                    key={issue._id}
-                    className="newsletter-card"
-                  >
-                    {issue.coverImageUrl && (
-                      <div className="newsletter-cover">
-                        <img
-                          src={issue.coverImageUrl}
-                          alt=""
-                          loading="lazy"
-                        />
-                      </div>
-                    )}
 
-                    <div className="newsletter-card-content">
-                      <p className="newsletter-date">
-                        {formatDate(issue.publishedAt)}
-                      </p>
+              {loading ? (
+                <div
+                  className="newsletter-status"
+                  role="status"
+                  aria-live="polite"
+                >
+                  Loading the latest edition...
+                </div>
+              ) : error ? (
+                <div
+                  role="alert"
+                  className="newsletter-status newsletter-error"
+                >
+                  {error}
+                </div>
+              ) : issues.length === 0 ? (
+                <div className="newsletter-empty">
+                  <p>No editions have been published yet.</p>
+                  <p>Check back soon for news from the Snails.</p>
+                </div>
+              ) : (
+                <div className="newsletter-grid">
+                  {issues.map((issue, index) => (
+                    <article
+                      key={issue._id}
+                      className="newsletter-card"
+                    >
+                      {issue.coverImageUrl && (
+                        <div className="newsletter-cover">
+                          <img
+                            src={issue.coverImageUrl}
+                            alt=""
+                            loading="lazy"
+                          />
+                        </div>
+                      )}
 
-                      <h2 className="newsletter-card-title">
+                      <div className="newsletter-card-content">
+                        <p className="newsletter-date">
+                          {index === 0 ? "Latest Edition · " : ""}
+                          {formatDate(issue.publishedAt)}
+                        </p>
+
+                        <h2 className="newsletter-card-title">
+                          <button
+                            type="button"
+                            onClick={() => setSelectedIssue(issue)}
+                            aria-label={`Read ${issue.title}`}
+                          >
+                            {issue.title}
+                          </button>
+                        </h2>
+
+                        {issue.excerpt && (
+                          <p className="newsletter-excerpt">
+                            {issue.excerpt}
+                          </p>
+                        )}
+
                         <button
                           type="button"
                           onClick={() => setSelectedIssue(issue)}
-                          style={{
-                            all: "unset",
-                            cursor: "pointer",
-                          }}
+                          className="newsletter-read-more"
                         >
-                          {issue.title}
+                          Read More <span aria-hidden="true">→</span>
                         </button>
-                      </h2>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              )}
+            </section>
 
-                      {issue.excerpt && (
-                        <p className="newsletter-excerpt">
-                          {issue.excerpt}
-                        </p>
-                      )}
-
-                      <button
-                        type="button"
-                        onClick={() => setSelectedIssue(issue)}
-                        className="newsletter-read-more"
-                      >
-                        Read newsletter →
-                      </button>
-                    </div>
-                  </article>
-                ))}
-              </div>
-            )}
+            <footer
+              style={{
+                marginTop: "3.5rem",
+                paddingTop: "1rem",
+                borderTop: "1px solid var(--newsletter-border)",
+                color: "var(--newsletter-muted)",
+                textAlign: "center",
+                fontSize: "0.75rem",
+                letterSpacing: "0.08em",
+              }}
+            >
+              SNAIL MAIL · FRC TEAM 1257
+            </footer>
           </>
         )}
       </div>
@@ -236,4 +282,4 @@ const Newsletter = () => {
   );
 };
 
-export default Newsletter; 
+export default Newsletter;

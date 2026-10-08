@@ -23,7 +23,7 @@ const parentsItems: SubtitleItemArray = [
     external: true,
   },
   {
-    title: "Newsletter",
+    title: "Archived Newsletter",
     to: "https://frc1257.github.io/blog",
     key: "newsletter",
     external: true,
