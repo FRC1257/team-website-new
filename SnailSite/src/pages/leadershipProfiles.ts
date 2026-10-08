@@ -11,6 +11,7 @@ import seojun from "../assets/leadershipImages/seojun.jpg";
 import ruhi from "../assets/leadershipImages/ruhi.jpg";
 import daniel from "../assets/leadershipImages/daniel.jpg";
 import angelina from "../assets/leadershipImages/angelina.jpg";
+import anish from "../assets/leadershipImages/anish.jpg";
 
 const leadership: LeaderProfilePropsList = [
   {
