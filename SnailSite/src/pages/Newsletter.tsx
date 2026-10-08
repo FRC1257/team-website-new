@@ -117,7 +117,7 @@ const Newsletter = () => {
 
             <div className="newsletter-masthead-top">
               <span>FRC Team 1257</span>
-              <span>The Snail Dispatch</span>
+              <span>Snail Mail</span>
             </div>
 
             <header className="newsletter-article-header">
