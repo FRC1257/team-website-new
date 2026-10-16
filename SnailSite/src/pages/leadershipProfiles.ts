@@ -12,6 +12,7 @@ import ruhi from "../assets/leadershipImages/ruhi.jpg";
 import daniel from "../assets/leadershipImages/daniel.jpg";
 import angelina from "../assets/leadershipImages/angelina.jpg";
 import anish from "../assets/leadershipImages/anish.jpg";
+import anjali from "../assets/leadershipImages/anjali.jpg";
 
 const leadership: LeaderProfilePropsList = [
   {
@@ -48,7 +49,7 @@ const leadership: LeaderProfilePropsList = [
     name: "Anjali Shah",
     position: "Electronics Manager",
     schoolgrade: "MHS '27",
-    image: "https://placehold.co/600x600",
+    image: anjali,
   },
   {
     name: "Ayah Mafaja",
