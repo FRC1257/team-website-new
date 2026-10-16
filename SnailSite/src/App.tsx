@@ -14,6 +14,7 @@ import Awards from "./pages/Awards";
 import Support from "./pages/Support";
 import Sponsors from "./pages/Sponsors";
 import Gallery from "./pages/Gallery";
+import Newsletter from "./pages/Newsletter";
 import OutreachRouter from "./pages/OutreachRouter";
 import Navbar from "./components/Navbar";
 import { useLayoutEffect, PropsWithChildren } from "react";
@@ -74,6 +75,10 @@ const router = createBrowserRouter([
       {
         path: "gallery",
         element: <Gallery />,
+      },
+      {
+        path: "newsletter",
+        element: <Newsletter />,
       },
       {
         path: "outreach/*",

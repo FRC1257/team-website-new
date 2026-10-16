@@ -23,7 +23,7 @@ const parentsItems: SubtitleItemArray = [
     external: true,
   },
   {
-    title: "Newsletter",
+    title: "Archived Newsletter",
     to: "https://frc1257.github.io/blog",
     key: "newsletter",
     external: true,
@@ -79,6 +79,9 @@ const Navbar = () => {
         </NavLink>
         <NavLink to="/sponsors" onClick={() => toggleNav()}>
           Sponsors
+        </NavLink>
+        <NavLink to="/newsletter" onClick={() => toggleNav()}>
+          Newsletter
         </NavLink>
       </>
     );
@@ -168,6 +171,9 @@ const Navbar = () => {
             </li>
             <li className="p-4">
               <Link to="/gallery">Gallery</Link>
+            </li>
+            <li className="p-4">
+              <Link to="/newsletter">Newsletter</Link>
             </li>
             <li className="p-4">
               <Link to="/sponsors">Sponsors</Link>
