@@ -49,7 +49,7 @@ const leadership: LeaderProfilePropsList = [
     name: "Anjali Shah",
     position: "Electronics Manager",
     schoolgrade: "MHS '27",
-    image: "https://placehold.co/600x600",
+    image: anjali,
   },
   {
     name: "Ayah Mafaja",
